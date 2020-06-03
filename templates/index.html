@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <title>CsED</title>
+    <title>Codecool Series</title>
 
     <!-- Import Montserrat font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style/form.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style/grid.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style/utils.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    <script src="/static/script.js" defer></script>
 
     <!-- page specific styling -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style/detailed-view.css') }}">
@@ -35,35 +37,140 @@
 <div id="body-wrapper">
     <header class="clearfix">
         <img id="header-logo" src="{{ url_for('static', filename='assets/codecool-logo.png') }}" alt="Codecool Logo">
-        <span id="header-title" class="title">
-                        Codecool Series DB
+        <span id="header-title" class="title"><a href="/">
+            Codecool Series DB</a>
                     </span>
         <div id="header-auth">
+            {%if 'USERNAME' not in session %}
             <button type="button" id="bt_register">Register</button>
             <button type="button" id="bt_login">Login</button>
+            {%else%}
+            <button id="profile_btn"><a id="usernameHead" href="/user-profile/{{session['USERNAME']}}">{{session['USERNAME']}}</a>
+            </button>
+            <button type="button" id="bt_logout"><a href="/log-out">Log out</a></button>
+            {%endif%}
         </div>
     </header>
     <section>
+        <div id="registration" class='card invisible'>
+            <div class="modal-contents">
+                <h3><b>Registration</b></h3>
+                <form action='/registration' method="post">
+                    <label>Username:</label><input id="username" name="username" type="text"></br></br></br>
+                    <label>Password:</label><input id="password" name="password" type="password"></br></br></br>
+                    <button type="submit" id="registration_button">Sign up</button>
+                </form>
+            </div>
+        </div>
+        <div id="sign_in" class='card invisible'>
+            <div class="modal-contents">
+                <h3><b>Sign in</b></h3>
+                <form action="/sign-in" method="post">
+                    <label>Username:</label><input id="usernameSI" name="username" type="text"></br></br></br>
+                    <label>Password:</label><input id="passwordSI" name="password" type="password"></br></br></br>
+                    <button type="submit" id="sign_in_button" onclick="window.location.reload()">Sign in</button>
+                </form>
+            </div>
+        </div>
         <h1 class="title text-center">Welcome page</h1>
         <div class="card">
             <h2>Welcome TV show lovers!</h2>
             <p>This great site is happy to bring you your favourite TV show's <i>details</i>.</p>
-            <p></p>
-            <p>Okay, actually this is a designed dumb page without any logic.</p>
-            <p>You can find a navigational element, the so called "breadcrumb" above the page's title. Use it for
-                in-depth
-                navigation.
-            </p>
         </div>
         <div class="card">
-            <ul>
+            <table>
+                <thead>
+                <tr>
+                    <th>Title
+                        <a href="/{{page_id}}/sort-by/title/desc">
+                            <button class="sort_button"><i class="fa fa-angle-down"></i></button>
+                        </a>
+                        <a href="/{{page_id}}/sort-by/title/asc">
+                            <button class="sort_button"><i class="fa fa-angle-up "></i></button>
+                        </a></th>
+                    <th>Release year
+                        <a href="/{{page_id}}/sort-by/year/desc">
+                            <button class="sort_button"><i class="fa fa-angle-down"></i></button>
+                        </a>
+                        <a href="/{{page_id}}/sort-by/year/asc">
+                            <button class="sort_button"><i class="fa fa-angle-up"></i></button>
+                        </a></th>
+                    <th>Average runtime length
+                        <a href="/{{page_id}}/sort-by/runtime/desc">
+                            <button class="sort_button"><i class="fa fa-angle-down"></i></button>
+                        </a>
+                        <a href="/{{page_id}}/sort-by/runtime/asc">
+                            <button class="sort_button"><i class="fa fa-angle-up"></i></button>
+                        </a></th>
+                    <th>Genres
+                        <a href="/{{page_id}}/sort-by/genre/desc">
+                            <button class="sort_button"><i class="fa fa-angle-down"></i></button>
+                        </a>
+                        <a href="/{{page_id}}/sort-by/genre/asc">
+                            <button class="sort_button"><i class="fa fa-angle-up"></i></button>
+                        </a></th>
+                    <th>Rating
+                        <a href="/{{page_id}}/sort-by/rating/desc">
+                            <button class="sort_button"><i class="fa fa-angle-down"></i></button>
+                        </a>
+                        <a href="/{{page_id}}/sort-by/rating/asc">
+                            <button class="sort_button"><i class="fa fa-angle-up"></i></button>
+                        </a></th>
+                    <th>Trailer</th>
+                    <th>Homepage</th>
+                    {%if session['USERNAME']%}
+                    <th>Actions</th>
+                    {%endif%}
+                </tr>
+                </thead>
+
+                <tbody>
                 {% for show in shows %}
-                    <li>
-                        <a href="{{ '/tv-show/' + (show['id'] | string) }}">{{ show['title'] }}</a>
-                    </li>
+                    <tr>
+                    <td><a href="/show/{{ show.id }}">{{ show.title }}</a></td>
+
+                    <td>
+                    {{ show.year.year }}
+                    </td>
+                     <td>
+                    {{ show.runtime}}
+                    </td>
+                        <td>
+                         {{ genres[loop.index0].name }}
+                        </td>
+                     <td>
+                    {{ show.rating}}
+                    </td>
+                    <td>
+                        {{ show.trailer}}
+                    </td>
+                    <td>
+                        {{ show.homepage}}
+                    </td>
+                    </tr>
                 {% endfor %}
-            </ul>
+                </tbody>
+
+
+            </table>
+            {%if order%}
+            <button style="float: right"><a href="/page/{{page_id + 1}}/sort-by/{{order}}/{{direction}}">Next</a></button>
+            {%if page_id > 1%}
+            <button id="prev">
+                <a href="/page/{{page_id - 1}}/sort-by/{{order}}/{{direction}}" style="display:flex">Previous</a>
+            </button>
+            {%endif%}
+            {%else%}
+            <button style="float: right"><a href="/page/{{page_id + 1}}">Next</a></button>
+            {%if page_id > 1%}
+            <button id="prev"><a href="/page/{{page_id - 1}}" style="display:flex">Previous</a></button>
+            {%endif%}
+            {%endif%}
         </div>
+        <div id="fav-modal" class="invisible">
+
+        </div>
+
     </section>
     <footer>
         Copyright, bla-bla

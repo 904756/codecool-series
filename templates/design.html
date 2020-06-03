@@ -40,13 +40,19 @@
                     Codecool Series DB
                 </span>
         <div id="header-auth">
+            {%if 'USERNAME' not in session %}
             <button type="button" id="bt_register">Register</button>
             <button type="button" id="bt_login">Login</button>
+            {%else%}
+            <button id="profile_btn"><a id="usernameHead" href="/user-profile/{{session['USERNAME']}}">{{session['USERNAME']}}</a>
+            </button>
+            <button type="button" id="bt_logout"><a href="/log-out">Log out</a></button>
+            {%endif%}
         </div>
     </header>
     <section>
         <nav class="breadcrumb">
-            <a href="#">Game of Thrones</a>
+            <a href="#">{{ show_info.title }}</a>
             <span class="separator">&gt;</span>
             <a href="#">Season 3</a>
             <span class="separator">&gt;</span>
@@ -68,86 +74,52 @@
             <table>
                 <thead>
                 <tr>
-                    <th>a</th>
-                    <th>b</th>
-                    <th>c</th>
-                    <th>d</th>
-                    <th class="action-column">e</th>
+                    <th>Season Number</th>
+                    <th>Season Title</th>
+                    <th>Overview</th>
+                    <th class="action-column">Actions</th>
                 </tr>
                 </thead>
                 <tbody>
+ {% for season in seasons %}
                 <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor</td>
-                    <td>Sit amet</td>
+                    <td>{{ season.season_number }}</td>
+                    <td>{{ season.title }}</td>
+                    <td>{{ season.overview }}</td>
                     <td class="action-column">
                         <button type="button" class="icon-button"><i class="fa fa-edit fa-fw"></i></button>
                         <button type="button" class="icon-button"><i class="fa fa-trash fa-fw"></i></button>
                     </td>
                 </tr>
-                <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor</td>
-                    <td>Sit amet</td>
-                    <td class="action-column">
-                        <button type="button" class="icon-button"><i class="fa fa-edit fa-fw"></i></button>
-                        <button type="button" class="icon-button"><i class="fa fa-trash fa-fw"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor</td>
-                    <td>Sit amet</td>
-                    <td class="action-column">
-                        <button type="button" class="icon-button"><i class="fa fa-edit fa-fw"></i></button>
-                        <button type="button" class="icon-button"><i class="fa fa-trash fa-fw"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor</td>
-                    <td>Sit amet</td>
-                    <td class="action-column">
-                        <button type="button" class="icon-button"><i class="fa fa-edit fa-fw"></i></button>
-                        <button type="button" class="icon-button"><i class="fa fa-trash fa-fw"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                    <td>Dolor</td>
-                    <td>Sit amet</td>
-                    <td class="action-column">
-                        <button type="button" class="icon-button"><i class="fa fa-edit fa-fw"></i></button>
-                        <button type="button" class="icon-button"><i class="fa fa-trash fa-fw"></i></button>
-                    </td>
-                </tr>
+                    {% endfor %}
                 </tbody>
             </table>
         </div>
         <div class="card detailed-view">
             <p>And here is a "detailed" kind of view:</p>
             <div class="row">
-                <img src="http://www.impawards.com/2016/posters/deadpool_ver5.jpg" alt="Deadpool poster"
-                     class="poster col col-third">
+                {%if video_id%}
+                <iframe width="420" height="315"
+                        src="https://www.youtube.com/embed/{{video_id}}" style="float: left">
+                </iframe>
+                {%else%}
+                <img width="420px" height="315px"  style="float:left" alt="No trailer available">
+                {%endif%}
                 <div class="col col-twothird">
-                    <h2>Deadpool</h2>
-                    <p class="small grayed">1h 48min <span class="separator">|</span> Action, Adventure, Comedy <span
-                            class="separator">|</span> 12 February 2016 (USA)</p>
-                    <p>A fast-talking mercenary with a morbid sense of humor is subjected to a rogue experiment that
-                        leaves
-                        him with accelerated healing powers and a quest for revenge.</p>
+                    <h2>{{ show_info.title }}</h2>
+                    <p class="small grayed">{{ show_info.runtime }}min <span class="separator">|</span> Action, Adventure, Comedy <span
+                            class="separator">|</span> {{ show_info.year.year }} (USA)</p>
+                    <p> {{ show_info.overview }} </p>
                 </div>
             </div>
             <div>
                 <p><b>Director:</b>&nbsp;<a href="#">Tim Miller</a></p>
                 <p><b>Writers:</b>&nbsp;<a href="#">Rhett Reese</a>, <a href="#">Paul Wernick</a></p>
-                <p><b>Stars:</b>&nbsp;<a href="#">Ryan Reynolds</a>, <a href="#">Morena Baccarin</a>, <a href="#">T.J.
-                    Miller</a></p>
+                <p><b>Stars:</b>
+                    {% for actor in actors %}
+                    <a href="#">{{ actor.name }}</a>,
+                    {% endfor %}
+                </p>
             </div>
         </div>
         <div class="card">
@@ -184,6 +156,21 @@
                     <button type="submit">Submit</button>
                 </p>
             </form>
+        </div>
+        {% if 'USERNAME' in session %}
+            <div class="card">
+            <form action="/add-comment/{{ show_id}}" method="POST">
+                <label id="label">Place your comment here:</label>
+                <input id="comment" name="my_comment">
+                <button type="submit">SUBMIT</button>
+            </form>
+
+            </div>
+        {% endif %}
+
+        <div class="card">{% for comment in all_comments  %}
+            <p>{{ comment.username }} : {{ comment.comment }}</p>
+            {% endfor %}
         </div>
     </section>
     <footer>

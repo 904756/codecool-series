@@ -13,11 +13,11 @@ deactivate() {
 
 # insert your database name, username (role), host ip and password
 # you can find the API key in the assignment description page in Curriculum
-MY_PSQL_DBNAME=""
-MY_PSQL_USER=""
-MY_PSQL_HOST=""
-MY_PSQL_PASSWORD=""
-TRAKT_API_KEY=""
+MY_PSQL_DBNAME="movies_database"
+MY_PSQL_USER="zzz"
+MY_PSQL_HOST="localhost"
+MY_PSQL_PASSWORD="stayFocused"
+TRAKT_API_KEY="8ff15ce86611f31cd1253c5e6d2c2232bf5e7db500476b31c81f1dded88c7a37"
 
 export MY_PSQL_DBNAME
 export MY_PSQL_USER
