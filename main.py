@@ -4,7 +4,8 @@ import math
 from dotenv import load_dotenv
 
 load_dotenv()
-app = Flask('codecool_series')
+app = Flask('codecool-series-v2')
+
 
 @app.route('/')
 def index():

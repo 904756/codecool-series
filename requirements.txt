@@ -3,3 +3,9 @@ python-dotenv~=0.13
 psycopg2-binary~=2.9
 requests~=2.19
 
+# Click==7.0
+# Flask==1.1.1
+# itsdangerous==1.1.0
+Jinja2==3.1.2
+# MarkupSafe==1.1.1
+Werkzeug==0.16.0
