@@ -29,7 +29,7 @@ def init_db():
 
 
 def create_schema():
-    creation_script_file = "C:/Users/ROG/Projects/codecool-series-python-ROSUNICOLAE/data/db_schema/01_create_schema.sql"
+    creation_script_file = "/Users/zzz/Documents/2. Web & SQL/Solo/Codecool_series/data/db_schema/01_create_schema.sql"
     with open(creation_script_file) as schema_script:
         with establish_connection() as conn, \
                 conn.cursor() as cursor:
