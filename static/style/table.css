@@ -13,6 +13,14 @@ table th {
     background: #278bc4;
 }
 
+table th a {
+    color: #fff;
+}
+
+table th a:hover {
+    color: #fff;
+}
+
 table td {
     font-size: 13px;
 }

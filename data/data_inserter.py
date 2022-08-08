@@ -8,6 +8,10 @@ from psycopg2 import DataError
 import init_db
 from data_manager import execute_select, execute_dml_statement
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 headers = {
     'Content-Type': 'application/json',
     'trakt-api-version': '2',
@@ -18,12 +22,44 @@ TRAKT_MAX_LIMIT = 20
 TRAKT_MAX_SHOW_COUNT = 52500
 
 
+def should_use_trakt():
+    print("The program can try connecting to the TRAKT API to download data or use local data to insert instead (faster)?")
+    answer = input("Do you want to connect to the TRAKT API? (y/n) ")
+    return answer.lower() == "y"
+
 def main():
+    # We don't have documentation for trakt, so students shouldn't be exposed to it
+    # if you want to re-enable it by adding documentation about trakt to the project
+    # README then use should_use_trakt() instead of False
+    use_trakt = False
     init_db.init_db()
     init_db.create_schema()
-    insert_genres()
-    insert_shows(limit=20, max_show_count=100)
-    # print('Season data inserted')
+    if use_trakt:
+        insert_genres()
+        insert_shows(limit=20, max_show_count=100)
+        print('Data downloaded and inserted successfully')
+    else:
+        execute_sql_file("C:/Users/ROG/Projects/codecool-series-python-ROSUNICOLAE/data/dump_1000_shows/codecool_public_genres.sql")
+        print("Genres inserted")
+        execute_sql_file("C:/Users/ROG/Projects/codecool-series-python-ROSUNICOLAE/data/dump_1000_shows/codecool_public_shows.sql")
+        print("Shows inserted")
+        execute_sql_file("C:/Users/ROG/Projects/codecool-series-python-ROSUNICOLAE/data/dump_1000_shows/codecool_public_show_genres.sql")
+        print("Show genres inserted")
+        execute_sql_file("C:/Users/ROG/Projects/codecool-series-python-ROSUNICOLAE/data/dump_1000_shows/codecool_public_seasons.sql")
+        print("Seasons inserted")
+        execute_sql_file("C:/Users/ROG/Projects/codecool-series-python-ROSUNICOLAE/data/dump_1000_shows/codecool_public_episodes.sql")
+        print("Episodes inserted")
+        execute_sql_file("C:/Users/ROG/Projects/codecool-series-python-ROSUNICOLAE/data/dump_1000_shows/codecool_public_actors.sql")
+        print("Actors inserted")
+        execute_sql_file("C:/Users/ROG/Projects/codecool-series-python-ROSUNICOLAE/data/dump_1000_shows/codecool_public_show_characters.sql")
+        print("Show characters inserted")
+
+    print("Your database should work now!")
+
+
+def execute_sql_file(filename):
+    with open(filename, encoding="utf8") as file:
+        execute_dml_statement(file.read())
 
 
 def insert_genres():

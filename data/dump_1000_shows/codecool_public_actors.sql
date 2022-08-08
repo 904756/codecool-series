@@ -1805,9 +1805,9 @@ Although McIntyre has started his career in mostly short films, the actor had mo
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (419440, 'Manu Bennett', '1969-10-10', null, 'Manu Bennett (born 10 October 1969) is an actor from New Zealand who has appeared in television series and movies.
 
 Description above from the Wikipedia article Manu Bennett, licensed under CC-BY-SA, full list of contributors on Wikipedia.');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (455107, 'Dustin Clare', '1982-01-02', null, 'From Wikipedia, the free encyclopedia  
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (455107, 'Dustin Clare', '1982-01-02', null, 'From Wikipedia, the free encyclopedia
 
-  Dustin Clare is a Logie Award winning Australian actor. He is best known for his starring role as Gannicus in the Starz mini-series Spartacus: Gods of the Arena and will reprise his role in Spartacus: Vengeance, and as Riley Ward on the series McLeod''s Daughters.  
+  Dustin Clare is a Logie Award winning Australian actor. He is best known for his starring role as Gannicus in the Starz mini-series Spartacus: Gods of the Arena and will reprise his role in Spartacus: Vengeance, and as Riley Ward on the series McLeod''s Daughters.
 
   Description above from the Wikipedia article Dustin Clare, licensed under CC-BY-SA, full list of contributors on Wikipedia.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (448259, 'Daniel Feuerriegel', '1981-10-29', null, '');
@@ -3846,7 +3846,7 @@ Russell Irving "Russ" Tamblyn (born December 30, 1934) is an American film and t
  
 
 Description above from the Wikipedia article Russ Tamblyn, licensed under CC-BY-SA, full list of contributors on Wikipedia.');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (5270, 'Harry Dean Stanton', '1926-07-14', '2017-09-15', 'Harry Dean Stanton (born July 14, 1926) was is an American actor, musician, and singer. Stanton''s career spanned over fifty years, which saw him star in such films as Cool Hand Luke, Kelly''s Heroes, Dillinger, Alien, Repo Man, The Last Temptation of Christ, Wild at Heart, The Green Mile and The Pledge. In the late 2000s, he played a recurring role in the HBO television series Big Love. 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (5270, 'Harry Dean Stanton', '1926-07-14', '2017-09-15', 'Harry Dean Stanton (born July 14, 1926) was is an American actor, musician, and singer. Stanton''s career spanned over fifty years, which saw him star in such films as Cool Hand Luke, Kelly''s Heroes, Dillinger, Alien, Repo Man, The Last Temptation of Christ, Wild at Heart, The Green Mile and The Pledge. In the late 2000s, he played a recurring role in the HBO television series Big Love.
 
 Mr. Stanton died on September 15, 2017. He was 91.
 
@@ -3929,7 +3929,7 @@ Enrico "Rico" Colantoni (born February 14, 1963) is a Canadian actor, probably b
 Description above from the Wikipedia article Enrico  Colantoni licensed under CC-BY-SA, full list of contributors on Wikipedia.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (423199, 'Tom Ellis', '1979-11-17', null, 'Tom Ellis is a Welsh actor, best known for playing Dr. Oliver Cousins in the BBC soap opera "EastEnders" and Detective Sergeant Sam Speed in a "Life on Mars" parody in the "The Catherine Tate Show. He was also Sam in the BBC comedy "Pulling", and plays Gary in Miranda Hart''s BBC2 comedy "Miranda".  Other notable roles include Justyn in Channel 4''s "No Angels" and Thomas Milligan in the series three finale of British science-fiction television programme "Doctor Who". He also starred in the ITV comedy drama "Monday Monday" during July and August 2009 alongside Fay Ripley.
 
-Ellis is married to actress Tamzin Outhwaite. 
+Ellis is married to actress Tamzin Outhwaite.
 
 The family moved to England and Ellis attended High Storrs School in Sheffield and was a French Horn player in the City of Sheffield Youth Orchestra. He was also a huge Sheffield Wednesday fan, but now supports Arsenal.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (15012, 'Lauren German', '1978-11-29', null, 'Lauren German (born November 29, 1978) is an American actress, known for her role as the hitchhiker in the 2003 remake of The Texas Chainsaw Massacre, as well as for starring in the 2007 film Hostel: Part II, in which she plays one of the lead characters. She is also known for her role in A Walk to Remember, in which she plays a popular and jealous ex-girlfriend named Belinda.');
@@ -4437,9 +4437,9 @@ Description above from the Wikipedia article Chi McBride, licensed under CC-BY-S
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (472468, 'Kimee Balmilero', null, null, '');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (987437, 'Dennis Chun', null, null, '');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (272910, 'Ursula Parker', null, null, 'She is a prodigious violinist; played Carnegie Hall at age 8. Speaks fluent Slovenian. Her mother is from Slovenia.');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (440048, 'Neil deGrasse Tyson', '1958-10-05', null, 'From Wikipedia, the free encyclopedia  
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (440048, 'Neil deGrasse Tyson', '1958-10-05', null, 'From Wikipedia, the free encyclopedia
 
-  Neil deGrasse Tyson (born October 5, 1958) is an American astrophysicist and science communicator. He is currently the Frederick P. Rose Director of the Hayden Planetarium at the Rose Center for Earth and Space, and a research associate in the department of astrophysics at the American Museum of Natural History. Since 2006 he has hosted the educational science television show NOVA scienceNOW on PBS, and has been a frequent guest on The Daily Show, The Colbert Report, Real Time with Bill Maher, and Jeopardy!. It was announced on August 5, 2011, that Tyson will be hosting a new sequel to Carl Sagan''s Cosmos: A Personal Voyage television series.  
+  Neil deGrasse Tyson (born October 5, 1958) is an American astrophysicist and science communicator. He is currently the Frederick P. Rose Director of the Hayden Planetarium at the Rose Center for Earth and Space, and a research associate in the department of astrophysics at the American Museum of Natural History. Since 2006 he has hosted the educational science television show NOVA scienceNOW on PBS, and has been a frequent guest on The Daily Show, The Colbert Report, Real Time with Bill Maher, and Jeopardy!. It was announced on August 5, 2011, that Tyson will be hosting a new sequel to Carl Sagan''s Cosmos: A Personal Voyage television series.
 
   Description above from the Wikipedia article Neil deGrasse Tyson, licensed under CC-BY-SA, full list of contributors on Wikipedia.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (438198, 'Grant Bowler', '1968-07-18', null, 'Grant Bowler (born 18 July 1968 in Auckland, New Zealand) is an actor who has made appearances on American, Australian, and New Zealand movies and television shows. He is known for playing the role of Constable Wayne Patterson in Blue Heelers and also appeared as Wilhelmina Slater''s love interest Connor Owens in Ugly Betty. In November 2010, he was announced as the host of The Amazing Race Australia which will air on the Seven Network in 2011.');
@@ -4566,31 +4566,31 @@ Description above from the Wikipedia article Majel Barrett, licensed under CC-BY
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (427181, 'Jack O''Connell', '1990-08-01', null, 'Jack O''Connell is a British film and television actor, best known for playing Louis Zamperini in "Unbroken", Kyle Budwell in "Money Monster" and James Cook in the British television teen drama "Skins". He received the BAFTA EE Rising Star Award in 2015.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (431789, 'Kaya Scodelario', '1992-02-13', null, 'Kaya Scodelario was born in London, England. Right away, there was something different about her. Although she had a British upbringing, Kaya Scodelario had Brazilian roots and she spent time learning Portuguese until she was fluent in the language. At the age of 14, Kaya Scodelario decided to pursue acting and she auditioned for Skins, the debut series for new channel E4. Amazingly, Kaya Scodelario won the role of Effy despite the fact that she had no other acting experience to speak of. Maybe it was a stroke of luck or a glimpse of raw natural talent, but either way, Kaya Scodelario was pleased to have the opportunity and joined the show in January 2007. After an inauspicious debut in which she had no lines, Kaya Scodelario''s role of Effy proved to be quite a test. At the forefront of many disasters, including stalkers, death and sexual pressures, Effy became a fan favourite for her ability to somehow resolve testing life situations while keeping her head above water. As the role became more challenging, Kaya Scodelario came to like it even more since she likened Effy''s difficulties and loss of friends to real life. After two seasons of Skins, the series endured an overhaul at the end of 2007. Feeling that most of the characters had run their course, every character was written out of the series except for Effy. This was a significant change because it meant that Kaya Scodelario would be the most recognizable face for season three. As Kaya Scodelario waited for the new season of Skins to begin, she has taken advantage of her recent clout to seek out additional career opportunities. She joined the elite agency Models 1 and soon had a photo-op as the cover model for SUPERSUPER Magazine. Kaya Scodelario may be fostering her modeling career, but she is also making her feature film debut with a role in the 2009 film Moon. It stars Sam Rockwell as an astronaut suffering from surreal encounters while on the lunar planet.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (444513, 'Hannah Murray', '1989-07-01', null, 'Hannah Murray (born 1 July 1989) is an English actress best known for portraying Cassie Ainsworth in the E4 teen drama series Skins from 2007 to 2008 (and again in 2013) and Gilly in the HBO series Game of Thrones.');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (411596, 'Chin Han', '1969-11-27', null, 'Named one of Asia''s 25 greatest actors of all time by CNNGo (a division 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (411596, 'Chin Han', '1969-11-27', null, 'Named one of Asia''s 25 greatest actors of all time by CNNGo (a division
 
-of CNN) alongside stars like Hong Kong''s Tony Leung Chiu Wai, India''s 
+of CNN) alongside stars like Hong Kong''s Tony Leung Chiu Wai, India''s
 
-Amitabh Bachchan and Japan''s Toshiro Mifune, Chin Han''s 20 year career 
+Amitabh Bachchan and Japan''s Toshiro Mifune, Chin Han''s 20 year career
 
 in Asia has spanned theater, television and film.
 
-Beginning as a 
+Beginning as a
 
-teen actor in stage classics like Moliere''s L''Ecole des femmes and 
+teen actor in stage classics like Moliere''s L''Ecole des femmes and
 
-Shakespeare''s Twelfth Night, he went on to star in Singapore''s first 
+Shakespeare''s Twelfth Night, he went on to star in Singapore''s first
 
-English language television series Masters of the Sea produced by 
+English language television series Masters of the Sea produced by
 
-ex-Lorimar exec Joanne Brough (Dallas, Falcon Crest). A spin-off series 
+ex-Lorimar exec Joanne Brough (Dallas, Falcon Crest). A spin-off series
 
 Troubled Waters was to follow, which he also starred in.
 
 In 1998 Chin Han made his US film debut
 
- in Blindness an Official Selection at the 2nd Hollywood Film Festival 
+ in Blindness an Official Selection at the 2nd Hollywood Film Festival
 
-in a leading role opposite Vivian Wu (Peter Greenaway''s The Pillow 
+in a leading role opposite Vivian Wu (Peter Greenaway''s The Pillow
 
 Book).
 
@@ -4610,9 +4610,9 @@ In Los Angeles, he served as Associate Producer (credited as Chin Han Ng) on the
 
 Returning
 
- to the big screen, his strong supporting performance in Thom 
+ to the big screen, his strong supporting performance in Thom
 
-Fitzgerald''s (The Hanging Garden) 3 Needles with Lucy Liu, Sandra Oh, 
+Fitzgerald''s (The Hanging Garden) 3 Needles with Lucy Liu, Sandra Oh,
 
 and Chloe Sevigny led one movie reviewer to note that for his ''small but
 
@@ -4620,27 +4620,27 @@ and Chloe Sevigny led one movie reviewer to note that for his ''small but
 
 In
 
- 2008, Chin Han took on the pivotal role of Lau in the summer 
+ 2008, Chin Han took on the pivotal role of Lau in the summer
 
-blockbuster movie The Dark Knight and was described by director 
+blockbuster movie The Dark Knight and was described by director
 
 Christopher Nolan as having ''a great presence... it was exactly what the
 
  character required'' (South China Morning Post).
 
-The following 
+The following
 
-year, he joined John Cusack, Chiwetel Ejiofor and Woody Harrelson in 
+year, he joined John Cusack, Chiwetel Ejiofor and Woody Harrelson in
 
-Roland Emmerich''s epic disaster movie 2012 which has grossed more than 
+Roland Emmerich''s epic disaster movie 2012 which has grossed more than
 
 $750 million worldwide to date.
 
-Chin Han can next be seen in Gus 
+Chin Han can next be seen in Gus
 
 Van Sant''s highly anticipated Restless, produced by Ron Howard and Brian
 
- Grazer, and Steven Soderbergh''s star-studded biohazard thriller 
+ Grazer, and Steven Soderbergh''s star-studded biohazard thriller
 
 Contagion from Warner Bros in 2011.
 
@@ -5645,21 +5645,21 @@ INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (638642,
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (55570, 'Paul Higgins', null, null, '');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (416385, 'Fiona O''Shaughnessy', null, null, '');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (418379, 'Neil Maskell', null, null, '');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (13867, 'Chris O''Donnell', '1970-06-26', null, 'Chris O'' Donnell was born on June 26th, 1970. He is the youngest child 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (13867, 'Chris O''Donnell', '1970-06-26', null, 'Chris O'' Donnell was born on June 26th, 1970. He is the youngest child
 
-in his family with four sisters and two brothers. He first started 
+in his family with four sisters and two brothers. He first started
 
-modeling at the age of thirteen and continued until the age of sixteen, 
+modeling at the age of thirteen and continued until the age of sixteen,
 
 when he appeared in commercials. When he was seventeen, he was preparing
 
- to stop acting and modeling, but was asked to audition for what would 
+ to stop acting and modeling, but was asked to audition for what would
 
 be his first film, Men Don''t Leave
 
  (1990). He didn''t want to go to the audition, but his mother bribed him
 
- by saying she would buy him a new car if he went and he duly got the 
+ by saying she would buy him a new car if he went and he duly got the
 
 role.
 
@@ -5667,9 +5667,9 @@ Ever since that moment in his life, Chris has appeared in some major motion pict
 
 Chris
 
- took time off from acting to spend time with his wife, Caroline, son, 
+ took time off from acting to spend time with his wife, Caroline, son,
 
-Chris Jr., and his daughter Lilly. He also spent two months in New York 
+Chris Jr., and his daughter Lilly. He also spent two months in New York
 
 performing in Arthur Miller''s "The Man Who Had All the Luck".');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (419221, 'LL Cool J', '1968-01-14', null, 'James Todd Smith better known as LL Cool J (acronym for Ladies Love Cool James) is an American rapper and actor. He has released twelve studio albums and two greatest hits compilations, with his final album being 2008''s Exit 13, the last for his record deal with Def Jam Recordings. He has appeared in numerous films, and stars as NCIS Special Agent Sam Hanna on the CBS crime drama television series NCIS: Los Angeles. He was born on January 14, 1968 in St.Albans,   While LL Cool J first appeared as a rapper in the movie Krush Groove (performing "I Can''t Live Without My Radio"), his first acting part was a small role in a high school football movie called Wildcats. He continued to work in movies from then until 1995 when he landed his own television sitcom, In the House. In 1998 he had a role in the film Halloween H20. In 1999''s Deep BlueSea. Later that year, he had a starring role in Any Given Sunday, in which he played Julian Washington, the talented but selfish running back on the dysfunctional Miami Sharks. Since then, LL Cool J has appeared in a variety of films, such as the 2002 remake of Rollerball, Deliver Us from Eva, and S.W.A.T. In 2005, he returned to television in a guest starring role on the Fox medical drama House. He also appeared as Queen Latifah''s love interest in the 2006 movie Last Holiday. He also guest starred on 30 Rock in the 2007 episode "The Source Awards" as the hip hop producer Ridiculous. Next he appeared in Sesame Street ''s 39th season where he introduced the word of the day, "Unanimous” and performing "The Addition Expedition" in episode 4172 (Sept. 30, 2008). As of 2011, LL Cool J is a series regular on the CBS police procedural NCIS: Los Angeles, a spin-off of NCIS.   He lives in Long Island, New York, with his wife and four children.');
@@ -5986,11 +5986,11 @@ INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (411580,
 
 Jackson DeForest Kelley  (January 20, 1920 – June 11, 1999) was an American actor, screenwriter,  poet and singer known for his iconic roles in Westerns and as Dr. Leonard "Bones" McCoy of the USS Enterprise in the television and film series Star Trek.
 
-Kelley was delivered by his uncle at his parents'' home in Atlanta, the son of Clora (née Casey) and Ernest David Kelley, who was a Baptist minister of Irish and Southern ancestry. DeForest was named after the pioneering electronics engineer Lee De Forest, and later named his Star Trek character''s father "David" after his own. Kelley had an older brother, Ernest Casey Kelley. 
+Kelley was delivered by his uncle at his parents'' home in Atlanta, the son of Clora (née Casey) and Ernest David Kelley, who was a Baptist minister of Irish and Southern ancestry. DeForest was named after the pioneering electronics engineer Lee De Forest, and later named his Star Trek character''s father "David" after his own. Kelley had an older brother, Ernest Casey Kelley.
 
 As a child, he often played outside for hours at a time. Kelley was immersed in his father''s mission in Conyers  and promised his father failure would mean "wreck and ruin". Before the  end of his first year at Conyers, Kelley was introduced into the  congregation to his musical talents and often sang solo in morning  church services. Eventually, this led to an appearance on the radio station WSB AM in Atlanta, Georgia. As a result of his radio work, he won an engagement with Lew Forbes and his orchestra at the Paramount Theater.
 
-In  1934, the family left Conyers for the community of Decatur. He attended  the Decatur Boys High School where he played on the Decatur Bantams  baseball team. Kelley also played football and other sports. Before his  graduation, Kelley got a job as a drugstore car hop. He spent his  weekends working in the local theatres. Kelley graduated in 1938. 
+In  1934, the family left Conyers for the community of Decatur. He attended  the Decatur Boys High School where he played on the Decatur Bantams  baseball team. Kelley also played football and other sports. Before his  graduation, Kelley got a job as a drugstore car hop. He spent his  weekends working in the local theatres. Kelley graduated in 1938.
 
 During World War II, Kelley served as an enlisted man in the United States Army Air Forces between March 10, 1943, and January 28, 1946, assigned to the First Motion Picture Unit. After an extended stay in Long Beach, California,  Kelley decided to pursue an acting career and relocate to southern  California permanently, living for a time with his uncle Casey. He  worked as an usher in a local theater in order to earn enough money for  the move. Kelley''s mother encouraged her son in his new career goal, but  his father disliked the idea. While in California, Kelley was spotted  by a Paramount Pictures scout while doing a United States Navy training film.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (411581, 'Walter Koenig', '1936-09-14', null, 'Walter Marvin Koenig is an American actor, writer, teacher and director, known for his roles as Pavel Chekov in Star Trek and Alfred Bester in Babylon 5. He wrote the script for the 2008 science fiction legal thriller InAlienable.');
@@ -6062,7 +6062,7 @@ INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (422358,
 
 Julie Ann Emery, born and raised in Crossville, Tennessee, is a theatre, television and film actress. She attended Webster Conservatory in St. Louis, Missouri, where she studied acting. She began her career at the age of 16 on the theatrical stage and has appeared in several productions, such as A Funny Thing Happened on the Way to the Forum and Bye Bye Birdie. She has made guest appearances on television series, such as ER, CSI: Miami and Commander in Chief, and starring roles in Line of Fire, and Steven Spielberg''s miniseries Taken. She also appeared in the film Hitch, alongside Will Smith. She currently resides in Los Angeles, California with her husband, Broadway actor Kevin Earley.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (76084, 'Yōichi Masukawa', null, null, '');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (445122, 'Yukari Tamura', '1976-02-27', null, 'Yukari Tamura is a Japanese singer-songwriter and voice actress, currently affiliated with I''m Enterprise (as a voice talent) and King Records (as a singer). She is known for her soft voice and interest in Lolita fashion. 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (445122, 'Yukari Tamura', '1976-02-27', null, 'Yukari Tamura is a Japanese singer-songwriter and voice actress, currently affiliated with I''m Enterprise (as a voice talent) and King Records (as a singer). She is known for her soft voice and interest in Lolita fashion.
 
 In 1997, she made her debut as a voice actress, releasing her debut single Yuuki wo Kudasai on March 26, 1997.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (81788, 'Ryōka Yuzuki', null, null, '');
@@ -8110,9 +8110,9 @@ Julie White (born June 4, 1961) is an American actress. She is known for her rol
 Description above from the Wikipedia article Julie White, licensed under CC-BY-SA, full list of contributors on Wikipedia.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (12421, 'Bill Cobbs', '1934-06-16', null, '');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (203473, 'Tonita Castro', null, null, '');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (434482, 'Brett Gelman', '1976-10-06', null, 'From Wikipedia, the free encyclopedia  
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (434482, 'Brett Gelman', '1976-10-06', null, 'From Wikipedia, the free encyclopedia
 
-  Brett Gelman (born October 6, 1976) is an American actor and comedian known for his appearances in the HBO comedy programs Funny or Die Presents and The Life &amp; Times of Tim. He currently co-stars alongside Chris Elliott in the Adult Swim series Eagleheart.  
+  Brett Gelman (born October 6, 1976) is an American actor and comedian known for his appearances in the HBO comedy programs Funny or Die Presents and The Life &amp; Times of Tim. He currently co-stars alongside Chris Elliott in the Adult Swim series Eagleheart.
 
   Description above from the Wikipedia article Brett Gelman, licensed under CC-BY-SA, full list of contributors on Wikipedia.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (191637, 'Sarah Baker', null, null, 'Sarah Baker is an American actress best known for roles in TV shows like Go On and movies like The Campaign.');
@@ -9015,15 +9015,15 @@ INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (414313,
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (15721, 'Jackie Earle Haley', '1961-07-14', null, 'Jackie Earle Haley (born Jack E. Haley; July 14, 1961) is an American film actor. Establishing himself from child actor to adult Academy Award-nominee, he is perhaps best known for his roles as Moocher in Breaking Away, Kelly Leak in The Bad News Bears, pedophile Ronnie McGorvey in Little Children, the vigilante Rorschach in Watchmen, as horror icon Freddy Krueger in the remake of A Nightmare on Elm Street, released on April 30, 2010, and most recently as Guerrero in Fox''s drama Human Target.
 
 Description above from the Wikipedia article Jackie Earle Haley, licensed under CC-BY-SA, full list of contributors on Wikipedia​');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (430616, 'Björn Bengtsson', '1973-10-17', null, '​Björn är född i Malmö och utbildad vid Balettakademien i Göteborg 1992 - 1993 samt Teaterhögskolan i Göteborg 1993 - 1996. Han slog igenom med Bernard-Marie Koltès monologdrama ”Natten före skogarna” på Helsingborgs stadsteater där han även spelat titelrollen i Shakespeares "Macbeth" och medverkat i uppsättningar som t ex Koltès "Västra Kajen" och Lars Noréns "Natten är dagens mor". 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (430616, 'Björn Bengtsson', '1973-10-17', null, '​Björn är född i Malmö och utbildad vid Balettakademien i Göteborg 1992 - 1993 samt Teaterhögskolan i Göteborg 1993 - 1996. Han slog igenom med Bernard-Marie Koltès monologdrama ”Natten före skogarna” på Helsingborgs stadsteater där han även spelat titelrollen i Shakespeares "Macbeth" och medverkat i uppsättningar som t ex Koltès "Västra Kajen" och Lars Noréns "Natten är dagens mor".
 
-  Han har också arbetat på Malmö Dramatiska Teater i uppsättningar av Hjalmar Bergmans "Swedenhielms" och Patrick Hamiltons "Repet" samt på Dramaten i "Hotell Strindberg" och Selma Lagerlöfs "Herr Arnes penningar".  
+  Han har också arbetat på Malmö Dramatiska Teater i uppsättningar av Hjalmar Bergmans "Swedenhielms" och Patrick Hamiltons "Repet" samt på Dramaten i "Hotell Strindberg" och Selma Lagerlöfs "Herr Arnes penningar".
 
-  Björn har arbetat tillsammans med Lars Norén i uppsättningar av Tjechovs "Måsen", "Kyla" och Ibsens "Lille Eyolf" på Riksteatern, där vi även har sett honom i Jon Fosses "Någon kommer att komma", vilken regisserades av Eirik Stubø som även regisserade Björn i Koltès "Neger och hundar i kamp" på Nationaltheatret i Oslo.  
+  Björn har arbetat tillsammans med Lars Norén i uppsättningar av Tjechovs "Måsen", "Kyla" och Ibsens "Lille Eyolf" på Riksteatern, där vi även har sett honom i Jon Fosses "Någon kommer att komma", vilken regisserades av Eirik Stubø som även regisserade Björn i Koltès "Neger och hundar i kamp" på Nationaltheatret i Oslo.
 
-  På Stockholms Stadsteater har vi också sett honom i Václav Havels ”Avgång” i regi av Lennart Hjulström, Alexander Mørk-Eidems kritikerrosade iscensättning av Tjechovs "Tre systrar" samt i Mark Ravenhills ”Shopping and Fucking” i regi av Hugo Hansén.  
+  På Stockholms Stadsteater har vi också sett honom i Václav Havels ”Avgång” i regi av Lennart Hjulström, Alexander Mørk-Eidems kritikerrosade iscensättning av Tjechovs "Tre systrar" samt i Mark Ravenhills ”Shopping and Fucking” i regi av Hugo Hansén.
 
-  Björn har också medverkat i TV-produktioner som ”Bibliotekstjuven”, "Himmelblå" (för norska NRK), "Stenhuggaren", ”Åkalla”, "En spricka i kristallen", "Labyrint", "Stockholm", "Snapphanar", "Gertrud", "Fru Marianne", "Beck: Skorpionen" och "Ramona" samt i långfilmer som ”Psalm 21”, ”Rallybrudar”, "Beck: Skarpt läge", "Offside", "Vinnare och förlorare", "Moreno och tystnaden", "Svalan, katten, rosen, döden", "Kontorstid" och "Hot Dog".  
+  Björn har också medverkat i TV-produktioner som ”Bibliotekstjuven”, "Himmelblå" (för norska NRK), "Stenhuggaren", ”Åkalla”, "En spricka i kristallen", "Labyrint", "Stockholm", "Snapphanar", "Gertrud", "Fru Marianne", "Beck: Skorpionen" och "Ramona" samt i långfilmer som ”Psalm 21”, ”Rallybrudar”, "Beck: Skarpt läge", "Offside", "Vinnare och förlorare", "Moreno och tystnaden", "Svalan, katten, rosen, döden", "Kontorstid" och "Hot Dog".
 
   Björn arbetar även som manusförfattare. Kortfilmen "Efter" (2002) har visats på flera festivaler och nu arbetar han med flera filmmanus och idéer.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (591188, 'Christian Hillborg', null, null, '');
@@ -9063,7 +9063,7 @@ Mitchell (born 18 August 1993) is an Australian actress and singer. She is known
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (472879, 'David Lambert', '1993-11-29', null, '');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (472880, 'Cierra Ramirez', '1995-03-09', null, '');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (193504, 'Hayden Byerly', '2000-10-11', null, '');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (415907, 'Dania Ramirez', '1979-11-08', null, 'Dania Jissel Ramirez is a Latin-American actress on television and in film. Born in Santo Domingo, Dominican Republic, from an early age she knew her calling to be an actress. As a child, she enjoyed reenacting telenovelas for her relatives. A modeling scout saw her working in a store at the age of 15, which led to her first acting job, in an ad for soda. She later apprenticed in the Actor''s Workshop in N.Y.C. She then relocated to L.A. to develop her acting ambition. 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (415907, 'Dania Ramirez', '1979-11-08', null, 'Dania Jissel Ramirez is a Latin-American actress on television and in film. Born in Santo Domingo, Dominican Republic, from an early age she knew her calling to be an actress. As a child, she enjoyed reenacting telenovelas for her relatives. A modeling scout saw her working in a store at the age of 15, which led to her first acting job, in an ad for soda. She later apprenticed in the Actor''s Workshop in N.Y.C. She then relocated to L.A. to develop her acting ambition.
 
 Ramirez has made appearances in numerous music videos for artists such as LL Cool J, De La Soul, Santana, and Wisin & Yandel. She has acted in TV shows Buffy the Vampire Slayer, Heroes, 10-8: Officers on Duty, Entourage, and The Sopranos; in 1997, she was an extra in the HBO film Subway Stories, which led to her encountering filmmaker Spike Lee. Lee would later direct her in her film debut playing Daphne in 25th Hour (2002), as well as in She Hate Me (2004). Other films Ramirez has starred in include X-Men: The Last Stand (2006), Quarantine (2008), Cross Bronx (2004), and Premium Rush (2012). She depicted Rosie Falta on the Lifetime series Devious Maids from 2013 to 2016.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (425795, 'Grant Show', '1962-02-27', null, 'From Wikipedia, the free encyclopedia
@@ -9172,7 +9172,7 @@ She is possibly best known as one of the creators, writers and stars of the Brit
 She lives in London with her husband Adam Hynes, whom she met when she was 18, and married in 2002. They have three children.
 
 Description above from the Wikipedia article Jessica Hynes, licensed under CC-BY-SA, full list of contributors on Wikipedia.');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (431336, 'Julia Deakin', null, null, 'From Wikipedia, the free encyclopedia. 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (431336, 'Julia Deakin', null, null, 'From Wikipedia, the free encyclopedia.
 
  
 
@@ -9645,11 +9645,11 @@ INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (403247,
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (451314, 'Deedee Magno', '1975-04-02', null, '');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (433771, 'Grace Rolek', '1997-10-10', null, '');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (428590, 'Kate Micucci', '1980-03-31', null, 'Kate was born in New Jersey and spent most of her school years in Pennsylvania. As a kid she focused on playing outside in the woods and playing classical piano.  In college she majored in art, focusing on painting and making puppets. She received an A.A. in Fine Arts from Keystone College.  After a small stint watering banana and pineapple plants in Hawaii, Kate decided to go to Loyola Marymount University in Los Angeles where she made more puppets and received a B.A. in Studio Art.  In 2008, Kate resides in Los Angeles where she has a steady gig building sandcastles. She also works as an actor and can be found around town playing the ukulele.');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (429826, 'Mark-Paul Gosselaar', '1974-03-01', null, 'Mark-Paul Harry Gosselaar was born on March 1, 1974, in Panorama City, 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (429826, 'Mark-Paul Gosselaar', '1974-03-01', null, 'Mark-Paul Harry Gosselaar was born on March 1, 1974, in Panorama City,
 
-California. He was born to Dutch-born father Hans Gosselaar and 
+California. He was born to Dutch-born father Hans Gosselaar and
 
-Indonesian-born mother Paula, who are now divorced. He has an older 
+Indonesian-born mother Paula, who are now divorced. He has an older
 
 brother, Mike, and two older sisters, Linda and Sylvia. In 1989, after a
 
@@ -9657,9 +9657,9 @@ brother, Mike, and two older sisters, Linda and Sylvia. In 1989, after a
 
  hit "Saved by the Bell" (1989), co-starring Tiffani Thiessen
 
- who played his girlfriend, Kelly Kapowski, throughout the show''s run. 
+ who played his girlfriend, Kelly Kapowski, throughout the show''s run.
 
-The characters eventually married each other after the show and its 
+The characters eventually married each other after the show and its
 
 spin-off, "Saved by the Bell: The College Years" (1993) , ended production. It was there he met his future real-life wife, Lisa Ann Russell, whom he married in 1996 in Maui, Hawaii.
 
@@ -9671,9 +9671,9 @@ On the big screen, Gosselaar appeared in Dead Man on Campus (1998), as well as t
 
 Gosselaar''s
 
- sporting interests include cycling, motocross and auto racing. He is 
+ sporting interests include cycling, motocross and auto racing. He is
 
-also an avid pilot. Gosselaar lives outside of Los Angeles with his 
+also an avid pilot. Gosselaar lives outside of Los Angeles with his
 
 wife, Lisa, and their 2 children.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (298146, 'Malcolm McDowell', '1943-06-13', null, '​From Wikipedia, the free encyclopedia.
@@ -9925,7 +9925,7 @@ Description above from the Wikipedia article KaDee Strickland, licensed under CC
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (427507, 'Caterina Scorsone', '1981-10-16', null, '​From Wikipedia, the free encyclopedia.
 
 Caterina Scorsone (born Caterina Reminy Scorsone on October 16, 1981) is a Canadian actress. She is best known for her role as Amelia Shepherd on Private Practice and for her role as Alice Hamilton in Alice.');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (11126, 'Taye Diggs', '1971-01-02', null, 'From Wikipedia, the free encyclopedia  
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (11126, 'Taye Diggs', '1971-01-02', null, 'From Wikipedia, the free encyclopedia
 
   Scott Leo "Taye" Diggs (born January 2, 1971) is an American theatre, film and television actor. He is perhaps best known for his roles in the Broadway musical Rent, the motion picture How Stella Got Her Groove Back, and the television series Private Practice. His nickname, Taye, comes from the playful pronunciation of Scotty as "Scottay".  Description above from the Wikipedia article Taye Diggs, licensed under CC-BY-SA, full list of contributors on Wikipedia.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (445083, 'Griffin Gluck', '2000-08-24', null, '');
@@ -10020,7 +10020,7 @@ Short Term 12 won the Grand Jury Prize for Best Narrative Feature at the 2013 So
 In 2014, Stanfield co-starred in The Purge: Anarchy and Selma, in the latter playing civil rights activist Jimmie Lee Jackson. He is set to appear in James Franco''s upcoming film Memoria and in Don Cheadle''s Miles Ahead. Stanfield will also star in the fantasy horror thriller film King Ripple, by the Michigan filmmaker Luke Jaden, and the music video for the Run the Jewels song "Close Your Eyes (And Count to Fuck)". In 2015, he portrayed rapper Snoop Dogg in the biopic Straight Outta Compton.
 
 Description above from the Wikipedia article Keith Stanfield, licensed under CC-BY-SA, full list of contributors on Wikipedia.');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (571522, 'Zazie Beetz', null, null, 'Zazie Beetz is a German born, American actress best known for the role of Vanessa on Atlanta. In 2016 she also appeared in the Netflix anthology series Easy. 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (571522, 'Zazie Beetz', null, null, 'Zazie Beetz is a German born, American actress best known for the role of Vanessa on Atlanta. In 2016 she also appeared in the Netflix anthology series Easy.
 
 Performing in community theaters and local stages since childhood, Zazie found her joy in grade school and grew up acting as a girl. A German-born New York native, Zazie was raised between Washington Heights and Berlin, speaking both German and English with her family at home. She received training from the Harlem School of the Arts and LaGuardia Arts Highschool, but took time to study French, feel fancy, and live in Paris during her time at Skidmore College. Theater continued to live alongside her love for language and travel, so upon graduating in 2013, she decided to muster up her courage and pursue a career in performing.
 
@@ -10189,7 +10189,7 @@ Daily was drafted into the Army and served in Korea with an artillery unit, late
 It was in his traveling-musician days that Daily began performing stand-up and gradually began playing some of the bigger clubs in the country. After graduating from the Goodman Theatre School, Daily worked for the NBC television station in Chicago, WMAQ, as an announcer and floor manager. He eventually became a staff director.
 
 Daily recently recalled for PBS how one day, preparing for a Chicago-area Emmy Award telecast, he asked a young Bob Newhart to come up with a routine about press agents. The bit, "Abe Lincoln vs. Madison Avenue," became an early hit for the performer.');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (412445, 'Paul Dooley', '1928-02-22', null, 'Dooley was born Paul Brown in Parkersburg, West Virginia, the son of Ruth Irene (née Barringer), a homemaker, and Peter James Brown, a factory worker. Dooley was a keen cartoonist as a youth and drew a strip for a local paper in Parkersburg. He joined the Navy before discovering acting while at college. He is married to writer Winnie Holzman, with whom he has one daughter, Savannah Dooley (born 1985).  Moving to New York, he soon found success as a regular on the stage. Also having an interest in comedy, Dooley was a standup comedian for five years, and a member of the Compass Players and The Second City troupe in NYC, as well as having brief stints as a magician and as a clown. Not afraid of trying different areas of entertainment, he also worked as a writer. He was one of the writers on The Electric Company and appeared in commercials.  Besides appearing in many movies, including most notably Popeye, Sixteen Candles, and Breaking Away, Dooley has also appeared as a variety of recurrent characters on numerous television shows, including My So-Called Life, Dream On, Grace Under Fire, Curb Your Enthusiasm, ALF (playing Whizzer Deaver) and Star Trek: Deep Space Nine where he played the recurring role of Enabran Tain. He guest starred in other prime time shows like Sabrina, the Teenage Witch, The Golden Girls, and Desperate Housewives. In 2000, he was nominated for an Emmy Award for his role as an eccentric judge on The Practice. He was also in the infamous alternate ending to Little Shop of Horrors, but was replaced by Jim Belushi in the final cut.  In 2010, Dooley played the part of the head chef at Camp Victory, a 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (412445, 'Paul Dooley', '1928-02-22', null, 'Dooley was born Paul Brown in Parkersburg, West Virginia, the son of Ruth Irene (née Barringer), a homemaker, and Peter James Brown, a factory worker. Dooley was a keen cartoonist as a youth and drew a strip for a local paper in Parkersburg. He joined the Navy before discovering acting while at college. He is married to writer Winnie Holzman, with whom he has one daughter, Savannah Dooley (born 1985).  Moving to New York, he soon found success as a regular on the stage. Also having an interest in comedy, Dooley was a standup comedian for five years, and a member of the Compass Players and The Second City troupe in NYC, as well as having brief stints as a magician and as a clown. Not afraid of trying different areas of entertainment, he also worked as a writer. He was one of the writers on The Electric Company and appeared in commercials.  Besides appearing in many movies, including most notably Popeye, Sixteen Candles, and Breaking Away, Dooley has also appeared as a variety of recurrent characters on numerous television shows, including My So-Called Life, Dream On, Grace Under Fire, Curb Your Enthusiasm, ALF (playing Whizzer Deaver) and Star Trek: Deep Space Nine where he played the recurring role of Enabran Tain. He guest starred in other prime time shows like Sabrina, the Teenage Witch, The Golden Girls, and Desperate Housewives. In 2000, he was nominated for an Emmy Award for his role as an eccentric judge on The Practice. He was also in the infamous alternate ending to Little Shop of Horrors, but was replaced by Jim Belushi in the final cut.  In 2010, Dooley played the part of the head chef at Camp Victory, a
 
 fictional fat camp, on the short-lived ABC Family original series Huge.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (295234, 'Anne Meara', '1929-09-20', '2015-05-23', 'From Wikipedia, the free encyclopedia.
@@ -10863,15 +10863,15 @@ Mark Addy Johnson (born 14 January 1964) is an English actor, best known for his
 
 Description above from the Wikipedia article Mark Addy, licensed under CC-BY-SA, full list of contributors on Wikipedia');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (446873, 'Robert Emms', '1986-05-20', null, '');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (423759, 'Jemima Rooper', '1981-10-24', null, 'From 12 she attended Godolphin &amp; Latymer School in London where she 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (423759, 'Jemima Rooper', '1981-10-24', null, 'From 12 she attended Godolphin &amp; Latymer School in London where she
 
-passed her 9 GCSEs with A* and A grades in between working for several 
+passed her 9 GCSEs with A* and A grades in between working for several
 
-terms away from school on the Famous Five. From there she went to 6th 
+terms away from school on the Famous Five. From there she went to 6th
 
-form college where she got 3 grade A levels. Her parents are both 
+form college where she got 3 grade A levels. Her parents are both
 
-freelance broadcasters and she has two cousins who are young film 
+freelance broadcasters and she has two cousins who are young film
 
 directors - one of them the promising Serbian director Stevan Filipovic.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (310560, 'Aiysha Hart', null, null, '');
@@ -12781,9 +12781,9 @@ Peter Firth (born 27 October 1953) is an English actor. He is well known for a v
 
 Description above from the Wikipedia article Peter Firth  licensed under CC-BY-SA, full list of contributors on Wikipedia.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (414321, 'Nicola Walker', null, null, '');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (443400, 'Lara Pulver', '1980-05-12', null, '​Lara was born and raised in Kent, UK. She studied drama with the NYMT and went on to gain a BA Hons degree in Theatre. 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (443400, 'Lara Pulver', '1980-05-12', null, '​Lara was born and raised in Kent, UK. She studied drama with the NYMT and went on to gain a BA Hons degree in Theatre.
 
-  Lara''s extensive theatre career led her to gain a Laurence Olivier Award nomination for her portrayal of Lucille Frank in Rob Ashford''s production of Parade at The Donmar Warehouse. She was invited to re-create the role at The Mark Taper Forum in Los Angeles opposite TR Knight (Grey''s Anatomy), gaining much critical praise.  
+  Lara''s extensive theatre career led her to gain a Laurence Olivier Award nomination for her portrayal of Lucille Frank in Rob Ashford''s production of Parade at The Donmar Warehouse. She was invited to re-create the role at The Mark Taper Forum in Los Angeles opposite TR Knight (Grey''s Anatomy), gaining much critical praise.
 
   Lara made her screen debut in 2008, in the BBC prime time show Robin Hood, playing Isabella of Gisbourne. The show is a huge international success and is airing on BBC America, Saturday evening at 8/9c. She has just completed filming the new Peter Morgan (Frost/Nixon, The Queen) movie, The Special Relationship, starring Michael Sheen and Dennis Quaid.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (414150, 'William Hope', null, null, 'From Wikipedia, the free encyclopedia. William "Bill" Hope is a Canadian stage, film, television and voice actor.
@@ -13663,7 +13663,7 @@ Valerie Anne Bertinelli (born April 23, 1960) is an American actress, best known
 
 Description above from the Wikipedia article Valerie Bertinelli,  licensed under CC-BY-SA, full list of contributors on Wikipedia.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (433071, 'Jonas Armstrong', '1981-01-01', null, '​He was born in Ireland but raised in St. Annes, Lancashire, England and educated at Arnold School in Blackpool, England. He graduated from the Royal Academy of Dramatic Art (RADA) in 2003.');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (416248, 'Keith Allen', '1953-06-02', null, 'Keith Philip George Allen is a Welsh actor, comedian, musician, singer-songwriter, artist, director, author, and television presenter. 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (416248, 'Keith Allen', '1953-06-02', null, 'Keith Philip George Allen is a Welsh actor, comedian, musician, singer-songwriter, artist, director, author, and television presenter.
 
 He is the father of singer-songwriter Lily Allen and actor Alfie Owen-Allen, and brother of Kevin Allen, the Welsh actor, screenwriter, film director and film producer.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (412687, 'Sam Troughton', '1977-03-21', null, '');
@@ -13806,9 +13806,9 @@ INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (398982,
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (328728, 'Rosamund Hanson', '1989-09-24', null, 'Rosamund Abigail Hanson is an English film and television actress who played the role of Michelle in the 2006 film This Is England and its television sequels This Is England ''86, This Is England ''88 and This Is England ''90.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (614998, 'Steve Brody', null, null, '');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (435227, 'Les Dennis', '1954-10-12', null, '');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (453543, 'Keith Chegwin', '1957-01-17', null, 'From Wikipedia, the free encyclopedia  
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (453543, 'Keith Chegwin', '1957-01-17', null, 'From Wikipedia, the free encyclopedia
 
-  Keith Chegwin (born 17 January 1957) is an English television presenter, former child actor and singer.  
+  Keith Chegwin (born 17 January 1957) is an English television presenter, former child actor and singer.
 
   Description above from the Wikipedia article Keith Chegwin, licensed under CC-BY-SA, full list of contributors on Wikipedia.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (115001, 'Matthew Holness', null, null, '');
@@ -14133,7 +14133,7 @@ INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (433723,
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (211498, 'Jack Farthing', null, null, '');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (298470, 'Josh Lucas', '1971-06-20', null, 'Over his career, Josh Lucas has worked with many of the film community''s greatest talents. He has starred alongside Jon Voight in Jerry Bruckheimer''s Glory Road
 
- (2006), for which Lucas added 40 pounds to transform himself into 
+ (2006), for which Lucas added 40 pounds to transform himself into
 
 legendary basketball coach Don Haskins. Lucas also starred with Kurt Russell and Richard Dreyfuss in Wolfgang Petersen''s Poseidon (2006). He starred with Morgan Freeman and Robert Redford in Lasse Hallström''s An Unfinished Life (2005). He also starred opposite Jamie Bell in David Gordon Green''s Undertow (2004), which was also produced by Terrence Malick. Additionally, Lucas worked alongside Christopher Walken in Around the Bend (2004).
 
@@ -14145,20 +14145,20 @@ Lucas recently completed his second collaboration with documentary filmmaker Ken
 
 Lucas recently completed his first venture into production with Stolen Lives
 
- (2009), in which he plays the single father of a mentally challenged 
+ (2009), in which he plays the single father of a mentally challenged
 
-boy. This film is the first project to be produced through Lucas'' 
+boy. This film is the first project to be produced through Lucas''
 
 production company, Two Bridges.
 
 Lucas resides in New York City.');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (562435, 'Chaunty Spillane', '1989-02-14', null, 'Chaunty Spillane was born in western Massachusetts.  She is an Italian-American SAG-AFTRA actress, model, filmmaker, public figure etc.  
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (562435, 'Chaunty Spillane', '1989-02-14', null, 'Chaunty Spillane was born in western Massachusetts.  She is an Italian-American SAG-AFTRA actress, model, filmmaker, public figure etc.
 
-Chaunty''s career began online as a model in 2011 with photographer Prishan Pandithage (a known photographer based out of NY, NY).  She then worked with other locally and nationally well-known photographers.  
+Chaunty''s career began online as a model in 2011 with photographer Prishan Pandithage (a known photographer based out of NY, NY).  She then worked with other locally and nationally well-known photographers.
 
 Spillane posted often much of her modeling (which was received well) reportedly on social platforms such as Facebook (where she is now Verified), Twitter, Instagram (where Spillane has the most followers collectively), YouTube as well as the now deceased application ''Vine'', her online "social presence" began to grow .  For instance, Chaunty made a video on Vine in 2013, it went viral and ended up in a Buzz Feed article.  Her account totaled to over 5.1 million views.
 
-Chaunty then moved onto acting by starring in indie film "Killing Khan" and moved on to do some minor background roles appearing in Blockbuster films such as "Ted 2", "Ghostbusters 2016", "Black Mass"etc.  The rest can be found on her IMDb (Internet Movie Data Base) resume in the reference sources below. 
+Chaunty then moved onto acting by starring in indie film "Killing Khan" and moved on to do some minor background roles appearing in Blockbuster films such as "Ted 2", "Ghostbusters 2016", "Black Mass"etc.  The rest can be found on her IMDb (Internet Movie Data Base) resume in the reference sources below.
 
 On the covers of Bikini magazine and Tease magazine, Spillane was featured as the cover girl in 2013-2015 four times.
 
@@ -14170,7 +14170,7 @@ Most recently, Chaunty has moved on to filmmaking and starring in her film "Canc
 
 Reference Sources:
 
-Chaunty Spillane''s Official IMDb: 
+Chaunty Spillane''s Official IMDb:
 
 http://www.imdb.com/name/nm5664097/?ref_=fn_al_nm_1
 
@@ -14178,7 +14178,7 @@ http://Twitter.com/chauntymodel
 
 http://Instagram.com/chauntyspillane
 
-http://youtube.com/chauntelspillane 
+http://youtube.com/chauntelspillane
 
 http://Facebook.com/chaunty
 
@@ -14313,9 +14313,9 @@ INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (415986,
 
 Her first leading role was in the biographical film Selena (1997), in which she earned an ALMA Award for Outstanding Actress. She earned her second ALMA Award for her performance in Out of Sight (1998). She has since starred in various films, including The Wedding Planner (2001), Maid in Manhattan (2002), Shall We Dance? (2004), Monster-in-Law (2005), and The Back-up Plan (2010).
 
-Lopez came to prominence within the music industry following the release of her debut studio album On the 6 (1999), which spawned the number one hit single "If You Had My Love". Her second studio album J.Lo (2001) was a commercial success, selling eight million copies worldwide. J to tha L-O!: The Remixes (2002) became her second consecutive album to debut at number one on the Billboard 200, while her third and fourth studio albums – This Is Me... Then (2002) and Rebirth (2005) – peaked at number two on the Billboard 200. In 2007, she released two albums including her first full Spanish-language album Como Ama una Mujer and her fifth English studio album, Brave. With a new record label, Lopez released Love? on April 19, 2011. In 2012, she released her greatest hits album, Dance Again... the Hits. A.K.A. followed in 2014. 
+Lopez came to prominence within the music industry following the release of her debut studio album On the 6 (1999), which spawned the number one hit single "If You Had My Love". Her second studio album J.Lo (2001) was a commercial success, selling eight million copies worldwide. J to tha L-O!: The Remixes (2002) became her second consecutive album to debut at number one on the Billboard 200, while her third and fourth studio albums – This Is Me... Then (2002) and Rebirth (2005) – peaked at number two on the Billboard 200. In 2007, she released two albums including her first full Spanish-language album Como Ama una Mujer and her fifth English studio album, Brave. With a new record label, Lopez released Love? on April 19, 2011. In 2012, she released her greatest hits album, Dance Again... the Hits. A.K.A. followed in 2014.
 
-Lopez''s contributions to the music industry have garnered her numerous achievements including two Grammy Award nominations; two Latin Grammy Award nominations; three American Music Awards, amongst six nominations; and the estimated sale of over 55 million records worldwide. Billboard ranked her as the 27th Artist of the 2000s decade. Lending her musical knowledge to others, Lopez was a member of the judging panel of American reality television competition American Idol. 
+Lopez''s contributions to the music industry have garnered her numerous achievements including two Grammy Award nominations; two Latin Grammy Award nominations; three American Music Awards, amongst six nominations; and the estimated sale of over 55 million records worldwide. Billboard ranked her as the 27th Artist of the 2000s decade. Lending her musical knowledge to others, Lopez was a member of the judging panel of American reality television competition American Idol.
 
 She led People en Español''s list of "100 Most Influential Hispanics" in February 2007. She has parlayed her media fame into a fashion line and various perfumes with her celebrity endorsement. Outside of her work in the entertainment industry, Lopez advocates human rights, vaccinations and is a supporter of Children''s Hospital Los Angeles. She currently executive produces the TV show Shades of Blue in which she stars as Harlee Santos, a dirty cop who provides for her daughter with money from bribes and protection payments.');
 INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (411801, 'Ray Liotta', '1954-12-18', null, 'Raymond Allen "Ray" Liotta (born December 18, 1954) is an American actor, best known for his portrayal of Henry Hill in the crime-drama Goodfellas, directed by Martin Scorsese and his role as Shoeless Joe Jackson in Field of Dreams. He has won an Emmy Award and been nominated for a Golden Globe Award. Also, Ray has voiced Tommy Vercetti in the video game Grand Theft Auto:Vice City.
@@ -14545,7 +14545,7 @@ She first came into widespread attention in the 1980s and early 1990s when she b
 In her other work, she has guest starred in the American sitcoms Roseanne and Friends, and won the American People''s Choice Award for voicing the wicked Fairy Godmother in DreamWorks'' animated Shrek 2. More recently, she wrote and starred in Jam &amp; Jerusalem and The Life and Times of Vivienne Vyle.
 
 Description above from the Wikipedia article Jennifer Saunders, licensed under CC-BY-SA, full list of contributors on Wikipedia.');
-INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (414080, 'Joanna Lumley', '1946-05-01', null, 'From Wikipedia, the free encyclopedia. 
+INSERT INTO public.actors (id, name, birthday, death, biography) VALUES (414080, 'Joanna Lumley', '1946-05-01', null, 'From Wikipedia, the free encyclopedia.
 
  
 

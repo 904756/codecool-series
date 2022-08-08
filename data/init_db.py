@@ -1,33 +1,42 @@
-from data_manager import get_connection_data, establish_connection
-import os
+from data_manager import ensure_var, get_connection_data, establish_connection
 
 
 def init_db():
-    init_conn = get_connection_data('postgres')
-    db_name = os.environ.get('MY_PSQL_DBNAME')
+    # We need to connect to postgres db to be able to drop our db
+    connection_data = get_connection_data('postgres')
+    db_to_init = ensure_var('MY_PSQL_DBNAME')
+    print(f'Running init with connection data: {connection_data} and initializing databae: {db_to_init}')
 
-    with establish_connection(connection_data=init_conn) as conn:
+    # Using `try` instead of `with`, because with psycopg 2.9, the connection starts a transaction if it's
+    # put into a `with` block, but that would produce the following error:
+    # ```
+    # DROP DATABASE cannot run inside a transaction block
+    # ```
+    conn = establish_connection(connection_data=connection_data)
+    try:
         with conn.cursor() as cursor:
             try:
-                drop_statement = 'DROP DATABASE IF EXISTS "{}";'.format(db_name)
-                create_statement = 'CREATE DATABASE "{}";'.format(db_name)
+                drop_statement = 'DROP DATABASE IF EXISTS "{}";'.format(db_to_init)
+                create_statement = 'CREATE DATABASE "{}";'.format(db_to_init)
                 cursor.execute(drop_statement)
                 cursor.execute(create_statement)
-                print("Database created.")
+                print(f"Database {db_to_init} is created")
             except Exception as ex:
-                print("Database creation failed")
-                print(ex.args)
+                print(f"Database creation failed: {db_to_init}")
+                raise(ex)
+    finally:
+        conn.close()
 
 
 def create_schema():
-    creation_script_file = 'data/db_schema/01_create_schema.sql'
+    creation_script_file = "C:/Users/ROG/Projects/codecool-series-python-ROSUNICOLAE/data/db_schema/01_create_schema.sql"
     with open(creation_script_file) as schema_script:
         with establish_connection() as conn, \
                 conn.cursor() as cursor:
             try:
                 sql_to_run = schema_script.read()
                 cursor.execute(sql_to_run)
-                print("Database schema created.")
+                print("Database schema created")
             except Exception as ex:
                 print("Schema creation failed")
                 print(ex.args)
