@@ -67,8 +67,8 @@
                     <td>{{ show.runtime}}</td>
                     <td>{{ show.rating }}</td>
                     <td>{{ show.genres }}</td>
-                    <td>{{ show.trailer }}</td>
-                    <td>{{ show.homepage }}</td>
+                    <td>{% if show.trailer %}{{ show.trailer }}{% else %} {{ no_link }}{% endif %}</td>
+                    <td>{% if show.homepage %}{{ show.homepage }}{% else %} {{ no_link }}{% endif %}</td>
                     </tr>
                 {% endfor %}
 

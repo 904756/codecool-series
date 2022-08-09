@@ -21,7 +21,8 @@ def design():
 @app.route('/shows/most-rated')
 def most_rated_shows():
     most_rated = queries.get_most_rated_shows()
-    return render_template('most-rated-shows.html', most_rated_shows=most_rated)
+    no_link = 'No URL'
+    return render_template('most-rated-shows.html', most_rated_shows=most_rated, no_link=no_link)
 
 
 @app.route('/show/<int:show_id>')
