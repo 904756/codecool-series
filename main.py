@@ -18,8 +18,17 @@ def design():
     return render_template('design.html')
 
 
+@app.route('/shows/most-rated')
+def most_rated_shows():
+    most_rated = queries.get_most_rated_shows()
+    return render_template('most-rated-shows.html', most_rated_shows=most_rated)
+
+
 def main():
-    app.run(debug=False)
+    # app.run(debug=False)
+    app.run(
+        host="0.0.0.0",
+        debug=True)
 
 
 if __name__ == '__main__':
