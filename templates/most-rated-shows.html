@@ -60,16 +60,16 @@
                 </tr>
                 </thead>
                 <tbody>
-                {% for show in  most_rated_shows %}
-                <tr>
-                    <td href="{{ url_for('show_page', show_id=show.id)}}">{{ show.title }}</td>
+                {% for show in most_rated_shows %}
+                    <tr>
+                <td><a href="{{ url_for('show_page', show_id=show.id)}}">{{ show.title }}</a></td>
                     <td>{{ show.year }}</td>
                     <td>{{ show.runtime}}</td>
                     <td>{{ show.rating }}</td>
                     <td>{{ show.genres }}</td>
                     <td>{{ show.trailer }}</td>
                     <td>{{ show.homepage }}</td>
-                </tr>
+                    </tr>
                 {% endfor %}
 
                 </tbody>
