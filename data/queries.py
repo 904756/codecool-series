@@ -25,6 +25,9 @@ def get_show_details_by_id(show_id):
                        {"show_id": show_id})
 
 
-# def get_show_by_id(show_id):
-#     return data_manager.execute_select('''SELECT * FROM shows WHERE id = %(show_id)s''',
-#                                        {"show_id": show_id})
+def get_list_seasons(show_id):
+    return data_manager.execute_select('''SELECT season_number, se.title, se.overview
+                                        FROM seasons se
+                                        LEFT JOIN shows s on se.show_id = s.id
+                                        WHERE se.show_id = %(show_id)s''',
+                                       {"show_id": show_id})

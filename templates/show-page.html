@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style/form.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style/grid.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style/utils.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='style/styles.css') }}">
 
     <!-- page specific styling -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style/detailed-view.css') }}">
@@ -64,7 +65,27 @@
             </div>
                {% endfor %}
         </div>
-
+     <h1 class="title text-center">Seasons</h1>
+    <div class="card">
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Title</th>
+                    <th>Overview</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for season in seasons %}
+                <tr>
+                    <td>{{ season.number }}</td>
+                    <td>{{ season.title }}</td>
+                    <td>{{ season.overview }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </section>
     <footer>
         Copyright, bla-bla
