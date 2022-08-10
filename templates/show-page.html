@@ -46,14 +46,14 @@
     <section>
         <div class="card detailed-view">
             <div class="row">
-                {% for attribute in show_attributes %}
-                <img src="#" alt="{{ attribute.title  }} poster"
+                {% for detail in show_details %}
+                <img src="#" alt="{{ detail.title  }} poster"
                      class="poster col col-third">
                 <div class="col col-twothird">
-                    <h2>{{ attribute.title }}</h2>
-                    <p class="small grayed"> {{ attribute.runtime }} <span class="separator">| {{ attribute.genres }}</span>
-                        <span class="separator">| </span> {{ attribute.year }} </p>
-                    <p> {{ attribute.overview }} </p>
+                    <h2>{{ detail.title }}</h2>
+                    <p class="small grayed"> {{ detail.runtime }} min<span class="separator">| {{ detail.genres }} </span>
+                        <span class="separator">| </span> {{ detail.year }} </p>
+                    <p> {{ detail.overview }} </p>
                 </div>
             </div>
             <div>
