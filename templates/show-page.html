@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <title>Shows</title>
+    <title>Show page</title>
 
     <!-- Import Montserrat font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style/form.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style/grid.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style/utils.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style/styles.css') }}">
 
     <!-- page specific styling -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style/detailed-view.css') }}">
@@ -45,37 +44,28 @@
         </div>
     </header>
     <section>
-        <h1 class="title text-center">Shows</h1>
-        <div class="card">
-            <table>
-                <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Year</th>
-                    <th>Runtime(min)</th>
-                    <th>Rating</th>
-                    <th>Genres</th>
-                    <th>Trailer</th>
-                    <th>Homepage</th>
-                </tr>
-                </thead>
-                <tbody>
-                {% for show in  most_rated_shows %}
-                <tr>
-                    <td href="{{ url_for('show_page', show_id=show.id)}}">{{ show.title }}</td>
-                    <td>{{ show.year }}</td>
-                    <td>{{ show.runtime}}</td>
-                    <td>{{ show.rating }}</td>
-                    <td>{{ show.genres }}</td>
-                    <td>{{ show.trailer }}</td>
-                    <td>{{ show.homepage }}</td>
-                </tr>
-                {% endfor %}
-
-                </tbody>
-            </table>
+        <div class="card detailed-view">
+            <div class="row">
+                {% for attribute in show_attributes %}
+                <img src="#" alt="{{ attribute.title  }} poster"
+                     class="poster col col-third">
+                <div class="col col-twothird">
+                    <h2>{{ attribute.title }}</h2>
+                    <p class="small grayed"> {{ attribute.runtime }} <span class="separator">| {{ attribute.genres }}</span>
+                        <span class="separator">| </span> {{ attribute.year }} </p>
+                    <p> {{ attribute.overview }} </p>
+                </div>
+            </div>
+            <div>
+                <p><b>Director:</b>&nbsp;<a href="#">Tim Miller</a></p>
+                <p><b>Writers:</b>&nbsp;<a href="#">Rhett Reese</a>, <a href="#">Paul Wernick</a></p>
+                <p><b>Stars:</b>&nbsp;<a href="#">Ryan Reynolds</a>, <a href="#">Morena Baccarin</a>, <a href="#">T.J.
+                    Miller</a></p>
+            </div>
+               {% endfor %}
         </div>
 
+    </section>
     <footer>
         Copyright, bla-bla
     </footer>

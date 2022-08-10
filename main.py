@@ -24,6 +24,12 @@ def most_rated_shows():
     return render_template('most-rated-shows.html', most_rated_shows=most_rated)
 
 
+@app.route('/show/<int:show_id>')
+def show_page(show_id):
+    show_attributes = queries.get_show_by_id(show_id)
+    return render_template('show-page.html', show_id=show_id,  show_attributes=show_attributes)
+
+
 def main():
     # app.run(debug=False)
     app.run(
