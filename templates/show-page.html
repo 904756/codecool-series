@@ -80,7 +80,7 @@
                 <tr>
                     <td>{{ season.number }}</td>
                     <td>{{ season.title }}</td>
-                    <td>{{ season.overview }}</td>
+                    <td>{% if season.overview %}{{ season.overview }}{% else %}{{ no_overview }}{% endif %}</td>
                 </tr>
                 {% endfor %}
                 </tbody>
