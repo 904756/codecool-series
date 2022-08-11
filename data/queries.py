@@ -31,3 +31,21 @@ def get_list_seasons(show_id):
                                         LEFT JOIN shows s on se.show_id = s.id
                                         WHERE se.show_id = %(show_id)s''',
                                        {"show_id": show_id})
+
+
+def get_top_3_actors(show_id):
+    return data_manager.execute_select('''SELECT string_agg(x.name, ', ') as names
+                                        FROM (
+                                            SELECT a.name
+                                            FROM actors a
+                                            LEFT JOIN show_characters sc
+                                                ON a.id = sc.actor_id
+                                            LEFT JOIN shows s
+                                                ON s.id = sc.show_id
+                                            WHERE s.id = %(show_id)s
+                                            GROUP BY sc.id, a.name
+                                            ORDER BY sc.id
+                                            LIMIT 3
+                                        ) AS x;
+                                        ''',
+                                       {"show_id": show_id})

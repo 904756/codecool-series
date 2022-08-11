@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <title>Show page</title>
+    <title>{% for detail in show_details %}{{ detail.title }}{% endfor %}</title>
 
     <!-- Import Montserrat font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -52,16 +52,14 @@
                      class="poster col col-third">
                 <div class="col col-twothird">
                     <h2>{{ detail.title }}</h2>
-                    <p class="small grayed"> {{ detail.runtime }} min<span class="separator">| {{ detail.genres}}</span>
-                        <span class="separator">| </span> {{ detail.year }} </p>
+                    <p class="small grayed"> {{ detail.runtime }} min <span class="separator">|  {{ detail.genres}}</span>
+                        <span class="separator">|</span>{{ detail.rating }} ☆</p>
+                    <br><br>
                     <p> {{ detail.overview }} </p>
                 </div>
             </div>
             <div>
-                <p><b>Director:</b>&nbsp;<a href="#">Tim Miller</a></p>
-                <p><b>Writers:</b>&nbsp;<a href="#">Rhett Reese</a>, <a href="#">Paul Wernick</a></p>
-                <p><b>Stars:</b>&nbsp; <a href="#">Morena Baccarin</a>, <a href="#">T.J.
-                    Miller</a></p>
+                <p><b>Stars:</b>{% for actor in top_3_actors %}&nbsp;<a href="#">{{ actor.names }}</a>{% endfor %}
             </div>
                {% endfor %}
         </div>
