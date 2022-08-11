@@ -57,7 +57,7 @@ def get_show_details_by_id(show_id):
                       LEFT JOIN genres ON show_genres.genre_id=genres.id
                       WHERE shows.id = %(show_id)s
                       GROUP BY shows.id, title, year, overview, runtime, rating, trailer, homepage''',
-                       {"show_id": show_id}, False)
+                       {"show_id": show_id})
 
 
 def get_list_seasons(show_id):
