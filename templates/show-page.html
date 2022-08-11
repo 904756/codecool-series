@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <title>{% for detail in show_details %}{{ detail.title }}{% endfor %}</title>
+    <title>{% for show_details in show_show_detailss %}{{ show_details.title }}{% endfor %}</title>
 
     <!-- Import Montserrat font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -29,7 +29,7 @@
      <link rel="stylesheet" href="{{ url_for('static', filename='style/styles.css') }}">
 
     <!-- page specific styling -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='style/detailed-view.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/show_detailsed-view.css') }}">
 </head>
 
 <body>
@@ -45,23 +45,23 @@
         </div>
     </header>
     <section>
-        <div class="card detailed-view">
+        <div class="card show_detailsed-view">
             <div class="row">
-                {% for detail in show_details %}
-                <img src="#" alt="{{ detail.title  }} poster"
+{#                {% for show_details in show_details %}#}
+                <img src="#" alt="{{ show_details.title  }} poster"
                      class="poster col col-third">
                 <div class="col col-twothird">
-                    <h2>{{ detail.title }}</h2>
-                    <p class="small grayed"> {{ detail.runtime }} min <span class="separator">|  {{ detail.genres}}</span>
-                        <span class="separator">|</span>{{ detail.rating }} ☆</p>
+                    <h2>{{ show_details.title }}</h2>
+                    <p class="small grayed"> {{ show_details.runtime }} min <span class="separator">|  {{ show_details.genres}}</span>
+                        <span class="separator">|</span>{{ show_details.rating }} ☆</p>
                     <br><br>
-                    <p> {{ detail.overview }} </p>
+                    <p> {{ show_details.overview }} </p>
                 </div>
             </div>
             <div>
                 <p><b>Stars:</b>{% for actor in top_3_actors %}&nbsp;<a href="#">{{ actor.names }}</a>{% endfor %}
             </div>
-               {% endfor %}
+{#               {% endfor %}#}
         </div>
      <h1 class="title text-center">Seasons</h1>
     <div class="card">
