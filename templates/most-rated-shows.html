@@ -63,7 +63,7 @@
                 {% for show in most_rated_shows %}
                     <tr>
                 <td><a href="{{ url_for('show_page', show_id=show.id)}}">{{ show.title }}</a></td>
-                    <td>{{ show.year }}</td>
+                    <td>{{ (show.year) | int }}</td>
                     <td>{{ show.runtime}}</td>
                     <td>{{ show.rating }}</td>
                     <td>{{ show.genres }}</td>
