@@ -30,6 +30,8 @@
 
     <!-- page specific styling -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style/detailed-view.css') }}">
+    <script defer href="{{ url_for('static', filename='js/script.js') }}"></script>
+
 </head>
 
 <body>
@@ -48,7 +50,7 @@
         <div class="card detailed-view">
             <div class="row">
                 {% for detail in show_details %}
-                <img src="#" alt="{{ detail.title  }} poster"
+                <img src="{{ detail.trailer }}" alt="{{ detail.title  }} poster"
                      class="poster col col-third">
                 <div class="col col-twothird">
                     <h2>{{ detail.title }}</h2>

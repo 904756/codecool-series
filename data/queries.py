@@ -1,3 +1,5 @@
+from psycopg2 import sql
+
 from data import data_manager
 
 
@@ -6,59 +8,79 @@ def get_shows():
 
 
 # def get_most_rated_shows():
-#     return data_manager.execute_select('''SELECT shows.id, title, year, overview, runtime, STRING_AGG(genres.name, ', ') genres, trunc(rating, 1) rating, trailer, homepage
-#                       FROM shows
-#                       LEFT JOIN show_genres ON shows.id=show_genres.show_id
-#                       LEFT JOIN genres ON show_genres.genre_id=genres.id
-#                       GROUP BY shows.id, title, year, overview, runtime, rating, trailer, homepage
-#                       ORDER BY rating DESC
-#                       LIMIT 15''')
+#     return data_manager.execute_select('''
+#     SELECT s.id,
+#     s.title,
+#     STRING_AGG(DISTINCT x.name, ', ') AS genres,
+#     EXTRACT(year FROM s.year) AS year,
+#    s.overview,
+#    s.runtime,
+#    trunc(s.rating, 1) AS rating,
+#    s.trailer,
+#    s.homepage
+#     FROM shows s
+#     LEFT JOIN show_genres sg ON s.id = sg.show_id
+#     LEFT JOIN genres g ON sg.genre_id = g.id
+#     LEFT JOIN (
+#       SELECT gg.name, ss.id
+#       FROM genres gg
+#       LEFT JOIN show_genres sgg ON sgg.genre_id = gg.id
+#       LEFT JOIN shows ss ON sgg.show_id = ss.id
+#       GROUP BY ss.id, gg.name
+#       ORDER BY gg.name
+#     ) AS x ON x.id = s.id
+#     GROUP BY s.id,
+#              s.title,
+#              s.year,
+#              s.overview,
+#              s.runtime,
+#              s.rating,
+#              s.trailer,
+#              s.homepage
+#     ORDER BY rating DESC
+#     LIMIT 15;''')
 
 
-# genres oredered alphabetically, year extracted but like 2009.0, 2016.0 not ok)
-def get_most_rated_shows():
-    return data_manager.execute_select('''
-    SELECT s.id,
-    s.title,
-    STRING_AGG(DISTINCT x.name, ', ') AS genres,
-    EXTRACT(year FROM s.year) AS year,
-   s.overview,
-   s.runtime,
-   trunc(s.rating, 1) AS rating,
-   s.trailer,
-   s.homepage
-    FROM shows s
-    LEFT JOIN show_genres sg ON s.id = sg.show_id
-    LEFT JOIN genres g ON sg.genre_id = g.id
-    LEFT JOIN (
-      SELECT gg.name, ss.id
-      FROM genres gg
-      LEFT JOIN show_genres sgg ON sgg.genre_id = gg.id
-      LEFT JOIN shows ss ON sgg.show_id = ss.id
-      GROUP BY ss.id, gg.name
-      ORDER BY gg.name
-    ) AS x ON x.id = s.id
-    GROUP BY s.id,
-             s.title,
-             s.year,
-             s.overview,
-             s.runtime,
-             s.rating,
-             s.trailer,
-             s.homepage
-    ORDER BY rating DESC
-    LIMIT 15;''')
+def get_show_count():
+    return data_manager.execute_select('SELECT count(*) FROM shows;')
+
+
+def get_shows_limited(order_by="rating", order="DESC", limit=0, offset=0):
+    return data_manager.execute_select(
+        sql.SQL("""
+            SELECT
+                shows.id,
+                shows.title,
+                EXTRACT(year FROM shows.year) AS year,
+                shows.runtime,
+                to_char(shows.rating::float, '999.9') AS rating,
+                string_agg(genres.name, ', ' ORDER BY genres.name) AS genres,
+                shows.trailer,
+                shows.homepage
+            FROM shows
+                JOIN show_genres ON shows.id = show_genres.show_id
+                JOIN genres ON show_genres.genre_id = genres.id
+            GROUP BY shows.id
+            ORDER BY
+                CASE WHEN %(order)s = 'ASC' THEN {order_by} END ASC,
+                CASE WHEN %(order)s = 'DESC' THEN {order_by} END DESC
+            LIMIT %(limit)s
+            OFFSET %(offset)s;
+        """
+        ).format(order_by=sql.Identifier(order_by)),
+        {"order": order, "limit": limit, "offset": offset}
+   )
 
 
 def get_show_details_by_id(show_id):
     return data_manager.execute_select('''
     SELECT shows.id, title, year, overview, runtime, STRING_AGG(genres.name, ', ') genres, trunc(rating, 1) rating, trailer, homepage
-                      FROM shows
-                      LEFT JOIN show_genres ON shows.id=show_genres.show_id
-                      LEFT JOIN genres ON show_genres.genre_id=genres.id
-                      WHERE shows.id = %(show_id)s
-                      GROUP BY shows.id, title, year, overview, runtime, rating, trailer, homepage''',
-                       {"show_id": show_id})
+    FROM shows
+    LEFT JOIN show_genres ON shows.id=show_genres.show_id
+    LEFT JOIN genres ON show_genres.genre_id=genres.id
+    WHERE shows.id = %(show_id)s
+    GROUP BY shows.id, title, year, overview, runtime, rating, trailer, homepage''',
+    {"show_id": show_id})
 
 
 def get_list_seasons(show_id):
@@ -86,3 +108,4 @@ def get_top_3_actors(show_id):
     ) AS x;
     ''',
    {"show_id": show_id})
+

@@ -1,5 +1,5 @@
 // script from https://developers.google.com/youtube/iframe_api_reference
-
+console.log('this is a test');
 // 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
 
