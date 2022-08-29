@@ -1,44 +1,9 @@
 from psycopg2 import sql
-
 from data import data_manager
 
 
 def get_shows():
     return data_manager.execute_select('SELECT id, title FROM shows;')
-
-
-# def get_most_rated_shows():
-#     return data_manager.execute_select('''
-#     SELECT s.id,
-#     s.title,
-#     STRING_AGG(DISTINCT x.name, ', ') AS genres,
-#     EXTRACT(year FROM s.year) AS year,
-#    s.overview,
-#    s.runtime,
-#    trunc(s.rating, 1) AS rating,
-#    s.trailer,
-#    s.homepage
-#     FROM shows s
-#     LEFT JOIN show_genres sg ON s.id = sg.show_id
-#     LEFT JOIN genres g ON sg.genre_id = g.id
-#     LEFT JOIN (
-#       SELECT gg.name, ss.id
-#       FROM genres gg
-#       LEFT JOIN show_genres sgg ON sgg.genre_id = gg.id
-#       LEFT JOIN shows ss ON sgg.show_id = ss.id
-#       GROUP BY ss.id, gg.name
-#       ORDER BY gg.name
-#     ) AS x ON x.id = s.id
-#     GROUP BY s.id,
-#              s.title,
-#              s.year,
-#              s.overview,
-#              s.runtime,
-#              s.rating,
-#              s.trailer,
-#              s.homepage
-#     ORDER BY rating DESC
-#     LIMIT 15;''')
 
 
 def get_show_count():

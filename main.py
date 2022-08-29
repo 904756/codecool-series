@@ -20,18 +20,6 @@ def design():
     return render_template('design.html')
 
 
-# @app.route('/shows/')
-# @app.route('/shows/most-rated')
-# @app.route('/shows/order-by-<order_by>-<order>/')
-# def most_rated_shows(order_by="rating", order="DESC"):
-#     most_rated = queries.get_most_rated_shows()
-#     no_link = 'No URL available'
-#     return render_template('most-rated-shows.html',
-#                            most_rated_shows=most_rated,
-#                            no_link=no_link,
-#                            order_by=order_by,
-#                            order=order)
-
 @app.route('/shows/')
 @app.route('/shows/<int:page_number>')
 @app.route('/shows/most-rated/')
@@ -66,27 +54,32 @@ def most_rated_shows(page_number=1, order_by="rating", order="DESC"):
     )
 
 
-
 @app.route('/show/<show_id>')
 def show_page(show_id):
     show_details = queries.get_show_details_by_id(show_id)
     seasons = queries.get_list_seasons(show_id)
     no_overview = 'No description available'
     top_3_actors = queries.get_top_3_actors(show_id)
+    for detail in show_details:
+        if detail['trailer'] is None:
+            video_id = ''
+        else:
+            video_id = show_details[0]["trailer"][27:]
     return render_template('show-page.html',
                            show_id=show_id,
                            show_details=show_details,
                            seasons=seasons,
+                           video_id=video_id,
                            no_overview=no_overview,
                            top_3_actors=top_3_actors)
 
 
 def main():
-    # app.run(debug=False)
-    app.run(
-        host="0.0.0.0",
-        port=80,
-        debug=True)
+    app.run(debug=False)
+    # app.run(
+    #     host="0.0.0.0",
+    #     port=80,
+    #     debug=True)
 
 
 if __name__ == '__main__':

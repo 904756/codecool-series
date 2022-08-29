@@ -27,10 +27,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style/grid.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style/utils.css') }}">
      <link rel="stylesheet" href="{{ url_for('static', filename='style/styles.css') }}">
-
     <!-- page specific styling -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style/detailed-view.css') }}">
-    <script defer href="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- js -->
+    <script defer type="text/javascript" src="{{ url_for('static', filename='js/embed-youtube.js') }}"></script>
 
 </head>
 
@@ -50,8 +50,45 @@
         <div class="card detailed-view">
             <div class="row">
                 {% for detail in show_details %}
-                <img src="{{ detail.trailer }}" alt="{{ detail.title  }} poster"
+                {% if video_id == '' %}
+                           <img src="{{ url_for('static', filename='assets/trailer_coming_soon.png') }}" alt="{{ detail.title  }} poster"
                      class="poster col col-third">
+                     {% else %}
+                    <div id="{{ video_id }}" class="video"></div>
+                    <div id="player"></div>
+                    <script>
+                        var tag = document.createElement('script');
+                        const videoId = document.querySelector('.video').id
+                        tag.src = "https://www.youtube.com/iframe_api";
+                        var firstScriptTag = document.getElementsByTagName('script')[0];
+                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                        var player;
+                        function onYouTubeIframeAPIReady() {
+                            player = new YT.Player('player', {
+                                height: '390',
+                                width: '640',
+                                videoId: videoId,
+                                events: {
+                                    'onReady': onPlayerReady,
+                                    'onStateChange': onPlayerStateChange
+                                }
+                            });
+                        }
+                        function onPlayerReady(event) {
+                            event.target.playVideo();
+                        }
+                        var done = false;
+                        function onPlayerStateChange(event) {
+                            if (event.data == YT.PlayerState.PLAYING && !done) {
+                                setTimeout(stopVideo, 6000);
+                                done = true;
+                            }
+                        }
+                        function stopVideo() {
+                            player.stopVideo();
+                        }
+                    </script>
+                {% endif %}
                 <div class="col col-twothird">
                     <h2>{{ detail.title }}</h2>
                     <p class="small grayed"> {{ detail.runtime }} min <span class="separator">|  {{ detail.genres}}</span>
@@ -63,6 +100,7 @@
             <div>
                 <p><b>Stars:</b>{% for actor in top_3_actors %}&nbsp;<a href="#">{{ actor.names }}</a>{% endfor %}
             </div>
+                      <div {% if detail.trailer %} id="player" {% endif %} class="trailer col col-third"></div>
                {% endfor %}
         </div>
      <h1 class="title text-center">Seasons</h1>
