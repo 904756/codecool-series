@@ -55,7 +55,7 @@
                      class="poster col col-third">
                      {% else %}
                     <div id="{{ video_id }}" class="video"></div>
-                    <div id="player"></div>
+                    <div id="player">
                     <script>
                         var tag = document.createElement('script');
                         const videoId = document.querySelector('.video').id
@@ -88,7 +88,9 @@
                             player.stopVideo();
                         }
                     </script>
+                       </div>
                 {% endif %}
+
                 <div class="col col-twothird">
                     <h2>{{ detail.title }}</h2>
                     <p class="small grayed"> {{ detail.runtime }} min <span class="separator">|  {{ detail.genres}}</span>
