@@ -98,8 +98,16 @@ def get_episodes(title):
     return jsonify(episodes)
 
 
+@app.route('/display-actors')
+def get_actors():
+    actors = queries.get_show_actors()
+    return render_template('actors-shows.html', actors=actors)
+
+
 def main():
-    app.run(debug=False)
+    app.run(
+        host="0.0.0.0",
+        port=5000)
 
 
 if __name__ == '__main__':

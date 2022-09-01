@@ -18,3 +18,12 @@ for (let i = 0; i<allSeasons.length; i++){
         document.getElementById('result').innerHTML = toDisplay
     })
 }
+
+
+const allShows = document.querySelectorAll('p')
+for (let i=0; allShows[i]; i++){
+    allShows[i].addEventListener('click', () => {
+        console.log(allShows[i])
+    })
+}
+

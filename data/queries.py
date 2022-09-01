@@ -106,3 +106,12 @@ def get_episodes(title):
     from episodes
     inner join seasons s on episodes.season_id = s.id
     where s.title = %(title)s""", {"title": title})
+
+
+def get_show_actors():
+    return data_manager.execute_select("""
+    SELECT a.id, a.name FROM actors a
+        INNER JOIN show_characters sc on a.id = sc.actor_id
+        INNER JOIN shows on sc.show_id = shows.id
+    GROUP BY 1, 2
+    HAVING count(shows.id) >= 6;""")
