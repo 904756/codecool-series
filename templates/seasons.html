@@ -30,7 +30,7 @@
     <!-- page specific styling -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style/detailed-view.css') }}">
     <!-- js -->
-    <script defer type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script defer type="text/javascript" src="{{ url_for('static', filename='js/seasons.js') }}"></script>
 
 </head>
 
@@ -49,12 +49,12 @@
     <section>
         <div class="card detailed-view">
             <div>
-            All actors who appeared in less than 10 shows and who's name ends in letter 'a'
+            Show all seasons that start with letter 'A' and have more than 10 episodes
             </div>
         </div>
             <div class="card detailed-view">
-                {% for actor in actors %}
-               <p>{{ actor.name }}</p>
+                {% for season in seasons %}
+               <p>{{ season.title }}</p>
                 {% endfor %}
             </div>
         <div id="result"></div>

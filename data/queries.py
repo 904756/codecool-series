@@ -88,4 +88,21 @@ def get_actors():
 
 # def get_years():
 #     return data_manager.execute_select("""SELECT  EXTRACT(year FROM a.birthday) AS year FROM actors a""")
+
+
+def get_seasons():
+    return data_manager.execute_select("""
+    select seasons.id, seasons.title, seasons.season_number
+    from seasons
+        inner join episodes e on seasons.id = e.season_id
+    where seasons.title ilike 'a%'
+    group by seasons.id, seasons.title, seasons.season_number
+    having count(e.title) > 10;""")
     
+
+def get_episodes(title):
+    return data_manager.execute_select("""
+    select episodes.title 
+    from episodes
+    inner join seasons s on episodes.season_id = s.id
+    where s.title = %(title)s""", {"title": title})

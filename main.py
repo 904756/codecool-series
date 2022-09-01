@@ -89,7 +89,13 @@ def display_actors_less_than_10_shows():
 @app.route('/seasons')
 def display_season():
     seasons = queries.get_seasons()
-    return render_template('seasons.html')
+    return render_template('seasons.html', seasons=seasons)
+
+
+@app.route('/api/get-episodes/<title>')
+def get_episodes(title):
+    episodes = queries.get_episodes(title)
+    return jsonify(episodes)
 
 
 def main():
