@@ -74,3 +74,18 @@ def get_top_3_actors(show_id):
     ''',
    {"show_id": show_id})
 
+
+def get_actors():
+    return data_manager.execute_select("""
+    SELECT a.name, count(s.id) FROM actors a
+        INNER JOIN show_characters sc on a.id = sc.actor_id
+        INNER JOIN seasons s on sc.show_id = s.show_id
+    WHERE name ilike '%a'
+    GROUP BY a.name
+    HAVING count(s.id) <  10
+    LIMIT 5;""")
+
+
+# def get_years():
+#     return data_manager.execute_select("""SELECT  EXTRACT(year FROM a.birthday) AS year FROM actors a""")
+    

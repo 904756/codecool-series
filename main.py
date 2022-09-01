@@ -1,7 +1,8 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, jsonify
 from data import queries
 import math
 from dotenv import load_dotenv
+
 
 load_dotenv()
 app = Flask('codecool-series-v2')
@@ -41,7 +42,6 @@ def most_rated_shows(page_number=1, order_by="rating", order="DESC"):
     elif shown_pages_end > pages_count:
         shown_pages_start = pages_count - SHOWN_PAGE_NUMBERS + 1
         shown_pages_end = pages_count
-
     return render_template(
         'most-rated-shows.html',
         shows=shows,
@@ -74,12 +74,26 @@ def show_page(show_id):
                            top_3_actors=top_3_actors)
 
 
+@app.route('/get-actors-less-than-10-shows')
+def display_actors_less_than_10_shows():
+    actors = queries.get_actors()
+    return render_template('actors.html', actors=actors)
+
+
+# @app.route('/api/get-actor-year/<year>')
+# def display_actor_year(year):
+#     years = queries.get_years()
+#     return jsonify(years)
+
+
+@app.route('/seasons')
+def display_season():
+    seasons = queries.get_seasons()
+    return render_template('seasons.html')
+
+
 def main():
     app.run(debug=False)
-    # app.run(
-    #     host="0.0.0.0",
-    #     port=80,
-    #     debug=True)
 
 
 if __name__ == '__main__':
