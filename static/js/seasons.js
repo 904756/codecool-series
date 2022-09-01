@@ -22,8 +22,15 @@ for (let i = 0; i<allSeasons.length; i++){
 
 const allShows = document.querySelectorAll('p')
 for (let i=0; allShows[i]; i++){
-    allShows[i].addEventListener('click', () => {
+    allShows[i].addEventListener('click', async() => {
+        const response = await fetch(`/api/get-actors4/${allShows[i].id}`)
         console.log(allShows[i])
+        const shows = await response.json()
+        let toDisplay = ''
+        for (let show of shows){
+            toDisplay = `${toDisplay}<div>${show.title}</div>`
+        }
+        document.getElementById('result').innerHTML = toDisplay
     })
 }
 

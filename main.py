@@ -104,6 +104,13 @@ def get_actors():
     return render_template('actors-shows.html', actors=actors)
 
 
+@app.route('/api/get-actors4/<actor>')
+def get_drama(actor):
+    shows = queries.get_shows6(actor)
+    print(actor)
+    return jsonify(shows)
+
+
 def main():
     app.run(
         host="0.0.0.0",

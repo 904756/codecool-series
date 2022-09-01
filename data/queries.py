@@ -115,3 +115,13 @@ def get_show_actors():
         INNER JOIN shows on sc.show_id = shows.id
     GROUP BY 1, 2
     HAVING count(shows.id) >= 6;""")
+
+
+def get_shows6(actor):
+    return data_manager.execute_select("""
+    SELECT DISTINCT s.title FROM shows s
+        INNER JOIN show_characters sc on s.id = sc.show_id
+        INNER JOIN actors a on sc.actor_id = a.id
+                        INNER JOIN show_genres sg on s.id = sg.show_id
+                        INNER JOIN genres g on sg.genre_id = g.id
+        WHERE g.name = 'Drama' AND a.id = %(actor)s;""", {'actor': actor})
